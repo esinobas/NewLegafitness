@@ -1,0 +1,403 @@
+@CHARSET "UTF-8";
+
+
+/** Define fonts **/
+@font-face{
+   font-family: Roboto-Regular;
+   src: url(./fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+   font-family: Roboto-Thin;
+   src: url(./fonts/roboto/Roboto-Thin.ttf);
+}
+
+@font-face{
+   font-family: Roboto-Medium;
+   src: url(./fonts/roboto/Roboto-Medium.ttf);
+}
+
+@font-face{
+   font-family: Roboto-Bold;
+   src: url(./fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face{
+   font-family: Roboto-Light;
+   src: url(./fonts/roboto/Roboto-Light.ttf);
+}
+
+html, body{
+   height: 100%;
+}
+body, .Orange-Article{
+ 
+   background-color:#ff5a00;
+   font-family: Roboto-Regular;
+   color:white;
+   
+}
+
+header{
+   
+   box-sizing: border-box;
+   width: 100%;
+   display: block;
+   float: left;
+   top:0px;
+   left: 0px;
+}
+#logo{
+   box-sizing: border-box;
+   background-image: url("../images/logo.jpg");
+   background-repeat: no-repeat;
+   width: 257px;
+   height: 128px;
+   float: left;
+   display: block;
+   background-position: center;
+}
+header, #title, #Logout{
+   font-family: Roboto-Regular;
+   color: white;
+   display:inline;
+   float: left;
+}
+
+nav{
+   box-sizing: border-box;
+   float: left;
+   display: block;
+   min-width: 257px;
+}
+section{
+   box-sizing:border-box;
+   float: left;
+   display: block;
+   width: calc(100%  - 257px);
+   padding: 0.7em;
+   height: calc(100% - 115px);
+   /*min-height: 100%;*/
+}
+article{
+   box-sizing: border-box;
+   float: left;
+   display:block;
+   width: 100%;
+   padding: 3em 6em;
+   height: 100%;
+   min-height: 100%;
+}
+
+#title, #Logout{
+   padding-top: 15px;
+}
+
+#title{
+   box-sizing: border-box;
+   font-size: 4em;
+   width: calc(100% - 475px);
+   text-align: center;
+}
+#Btn-Logout{
+ 
+   margin-top: 10px;
+}
+
+#Dashboard-Menu{
+   box-sizing: border-box;
+   float: left;
+   list-style: none;
+   color:white;
+   font-family: Roboto-Medium;
+   font-size: 1.5em;
+   width: 100%;
+}
+#Dashboard-Menu > li{
+   box-sizing: border-box;
+   /*width: 100%;*/
+   padding: 0.19em 0.31em;
+   width: 100%;
+}
+#Dashboard-Menu > li:HOVER, .SelectedMenu{
+   box-sizing: border-box;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   cursor: pointer;
+   padding-top:calc(0.19em - 1px);
+   padding-bottom: calc(0.19em - 1px);
+}
+#Tabla-Actividades{
+   width: 900px;
+   color: white;
+   font-size: 1.5em;
+}
+
+#Dialog-New-Activity, #Dialog-Remove-Activity,#Dialog-New-Timetable,
+#Dialog-Add-ActivityToDay,#Dialog-Remove-ActivityToDay, #Dialog-Error,
+#Dialog-Exit-Without-Save, #Dialog-Remove-Blog{
+   display: none;
+}
+#Activity-Name, #Timetable-Name,#Timetable-combobox{
+   width: 25em;
+   font-family: Roboto-Medium;
+   color:#ff5a00;
+}
+#Activity-Name:FOCUS,  #Timetable-Name:FOCUS,#Timetable-combobox:FOCUS{
+   
+   color: blue;
+   background-color: #d3cccc; 
+ 
+}
+.Table-Header{
+   font-size: 0.8em;
+   background-color: #ff5a00;
+   border-bottom-color: white;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+}
+
+.Table-Row{
+   font-size: 0.65em;
+}
+
+.Table-Header{
+   font-size: 0.8em;
+}
+
+.Table-Column1-Width{
+ 
+   width: 599px;
+}
+.Table-Column2-Width{
+ 
+   width: 100px;
+}
+.Table-Column3-Width{
+ 
+   width: 199px;
+}
+
+.Round-Corners-Button{
+ 
+   background-color: white;
+   color: #ff5a00;
+   border-color: #ff5a00;
+   font-family: Roboto-Medium;
+   
+ 
+}
+.Bold{
+   font-weight: bold;
+   font-size: 1.3em;
+}
+
+#Timetables-Container{
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   padding: 0.3em 2.5em;
+}
+
+#Selected-Timetable{
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   width: 100%;
+}
+#Timetable-combobox{
+   min-width: 45em;
+   
+}
+#New-Btn, #Save-Btn{
+   display: inline;
+   width: 6em;
+}
+#Current-Timetable{
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   padding: 3em 1em;
+   width: 100%;
+}
+
+.Timetable-Template{
+   box-sizing: border-box;
+   display: block;
+   float:left;
+   display: none;
+}
+.Timetable-Day-Week{
+   box-sizing: border-box;
+   display: block;
+   min-width: 7em;
+   width: 7em;
+   float: left;
+   padding: 0.07em;
+   text-align: center;
+}
+.Timetable-Time{
+   float: left;
+
+}
+.Timetable-Detailtime{
+    padding: 0em;
+}
+.Timetable-Quarter{
+   box-sizing: border-box;
+   font-size: 0.8em;
+   text-align: right;
+   min-height: 1.375em;
+   height: 22px;
+}
+.Timetable-Day-Time,.Vertical-Line{
+ margin-top: 0.6em;
+}
+.Timetable-Day-Time{
+   box-sizing: border-box;
+   display: block;
+   min-height:  82.5em;
+   background-color: white;
+   float: left;
+   cursor: pointer;
+   position:relative;
+   margin-left: 0.12em;
+}
+.Vertical-Line{
+   background-color: black;
+   width: 0.06em;
+   box-sizing: border-box;
+   display: block;
+   
+    min-height: 78.5em;
+}
+.Line-Right-Part{
+   border-right-style: solid;
+   border-right-color: black;
+   border-right-width: 0.06em;
+}
+.Activity-Detail{
+   box-sizing: border-box;
+   min-height: 1.375em;
+   min-width: 6.8125em;
+   color: white;
+   position: absolute;
+}
+.Activity-Time{
+ 
+   font-size: 0.7em;
+}
+
+/************************** BLOG *****************************/
+#Blog-Container{
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   height: 100%;
+   width: 100%;
+}
+#Blog-Toolbar{
+   width: 100%;
+   box-sizing: border-box;
+   display: block;
+   float: left;
+}
+.Blog-Button{
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   width: 100px;
+}
+#Blog-News{
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   height: 100%;
+   width: 100%;
+}
+#Blog-News-List-Container{
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   width: 260px;
+   height: 100%;
+   padding: 5px;
+   
+ }
+#Blog-New{
+   width: calc(100% - 270px);
+   height: 100%;
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   margin: 5px;
+   
+}
+ 
+.ListBox{
+   width: calc(100% - 4px); 
+   height: calc(100% - 10px); 
+   background-color: white;
+   color:#ff5a00;
+}
+.ListBoxItemSelected{ /*This class must be redefined in the project*/
+ 
+ border-radius: 5px;
+ background-color: #ff5a00;
+ color: white;
+
+}
+
+.Blog-Title{
+    box-sizing: border-box;
+   display: block;
+   float: left;
+   width: 85%;
+   font-size: 1.6em;
+   text-decoration: underline;
+}
+.Blog-Text{
+ 
+    box-sizing: border-box;
+   float: left;
+   width: 100%;
+   height: calc(100% - 55px);
+ 
+   margin-top: 3px;
+   overflow-y: scroll;
+}
+.Blog-Published{
+ 
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   width: 15%;
+}
+/*#Blog-New-Title{
+ 
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   width: 85%;
+   font-size: 1.6em;
+   text-decoration: underline;
+}
+#Blog-New-Published{
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   width: 15%;
+}
+#Blog-New-Data{
+   box-sizing: border-box;
+   float: left;
+   width: 100%;
+   height: calc(100% - 55px);
+ 
+   margin-top: 3px;
+   overflow-y: scroll;
+}*/
+.Blog-Title > p, .Blog-Text > p{
+ 
+   margin: 0px;
+}

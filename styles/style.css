@@ -1,0 +1,621 @@
+@CHARSET "UTF-8";
+
+/** Define fonts **/
+@font-face{
+   font-family: Roboto-Regular;
+   src: url(./fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+   font-family: Roboto-Thin;
+   src: url(./fonts/roboto/Roboto-Thin.ttf);
+}
+
+@font-face{
+   font-family: Roboto-Medium;
+   src: url(./fonts/roboto/Roboto-Medium.ttf);
+}
+
+@font-face{
+   font-family: Roboto-Bold;
+   src: url(./fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face{
+   font-family: Roboto-Light;
+   src: url(./fonts/roboto/Roboto-Light.ttf);
+}
+
+
+body, .Orange-Article{
+ 
+   background-color:#ff5a00;
+}
+
+header{
+   
+   box-sizing: border-box;
+   background-color: white;
+   display: block;
+   float: left;
+   position: fixed;
+   top:0px;
+   left: 0px;
+   z-index: 10;
+}
+
+footer{
+   box-sizing: border-box;
+   background-color: white ;
+   width: 100%;
+   display: block;
+   float: left;
+   font-family: Roboto-Light;
+   color:#ff5a00;
+   margin-top: 0.625em;
+}
+
+#logo{
+   box-sizing: border-box;
+   background-image: url("../images/logo.jpg");
+   background-repeat: no-repeat;
+   width: 257px;
+   height: 128px;
+   float: left;
+   display: block;
+   background-position: center;
+}
+#Image-Rooms{
+   box-sizing: border-box;
+   background-image: url("../images/lowcost33.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+#Image-Fitness-Room{
+   box-sizing: border-box;
+   background-image: url("../images/cuerpo35.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   display: block;
+   float: left;
+}
+#Image-Collective-Rooms{
+   box-sizing: border-box;
+   background-image: url("../images/cuerpo38.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   display: block;
+   float: left;
+}
+#Image-Classes{
+   box-sizing: border-box;
+   background-image: url("../images/cuerpo38.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+ 
+}
+#Image-Timetables{
+   box-sizing: border-box;
+   background-image: url("../images/cuerpo29.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+#Image-Fachada{
+   box-sizing: border-box;
+   background-image: url("../images/Fachada.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+
+#Image-Contacto{
+  box-sizing: border-box;
+   background-image: url("../images/contacto.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+
+}
+
+.container{
+   box-sizing: border-box;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+nav{
+   float: left;
+   display: block;
+}
+
+
+/** Menu style **/
+nav ul {
+   list-style: none;
+   text-decoration: none;
+   
+}
+
+nav ul li{
+   display: inline;
+   /*float: left;*/
+   text-align: center;
+}
+nav ul li a {
+   text-decoration: none;
+   color: #ff5a00;
+}
+
+nav ul li > ul{
+   box-sizing: border-box;
+   margin: 0;
+   margin-left: px;
+   margin-top: 10px;
+   display: none;
+   text-align: left;
+   position: absolute;
+   min-width: 300px;
+   z-index: 5;
+   background-color: white;
+}
+
+nav ul li:HOVER{
+   background-color: #f2f3f4;
+}
+
+nav ul li:HOVER > ul{
+   display: block;
+}
+
+hgroup h1 {
+   font-family: Roboto-Regular;
+   text-align: center;
+}
+
+.Anchor{
+   visibility: hidden;
+   height: 128px; /*same header*/
+   margin-top: -128px; /*same header*/
+   width: 100%;
+   float: left;
+ 
+}
+.Orange-Article{
+      color: white; 
+}
+.White-Article{
+ 
+   background-color: white;
+   color: #ff5a00;
+   display: block;
+   float: left;
+   width: 100%;
+}
+
+.Main-Article{
+   font-family: Roboto-Light;
+   display: block;
+   float: left;
+}
+#ImageLowCost{
+   box-sizing: border-box;
+   background-image: url("../images/Precio_3.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   float: left;
+   display: block;
+}
+.Text-Article{
+   box-sizing: border-box;
+   float: left;
+   display: block;
+ 
+}
+.StandOut-Text{
+ 
+   font-style: italic;
+   font-weight: bolder;
+}
+.Aclaration-Text{
+ 
+   font-style: italic;
+   font-size: 50%;
+}
+
+
+
+#Image-Timetable{
+   box-sizing: border-box;
+   background-image: url("../images/open_new.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   display: block;
+   float: left;
+}
+#Image-Parking{
+   box-sizing: border-box;
+   background-image: url("../images/parking.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   display: block;
+   float: left;
+}
+#Image-Ademas{
+   box-sizing: border-box;
+   background-image: url("../images/cuerpo55.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   display: block;
+   float: left;
+}
+.Class-Article-Image{
+   box-sizing: border-box;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   display: block;
+   float: left;
+}
+
+#Ademas-Text ul{
+   list-style: none;
+}
+
+
+#Aerobic-Step-Image{
+   background-image: url("../images/cuerpo12.jpg");
+}
+#GAP-Image{
+   background-image: url("../images/lowcost21.jpg");
+}
+#Ciclo-Indoor-Image{
+   background-image: url("../images/cuerpo6.jpg");
+}
+#Yoga-Image{
+   background-image: url("../images/Yoga.jpg");
+}
+#Pilates-Image{
+   background-image: url("../images/Pilates.jpg");
+}
+#TaiChi-Image{
+   background-image: url("../images/TaiChi.jpg");
+}
+
+#Contact-Form{
+ 
+   display: block;
+   
+}
+.DataEntryValue > input, .DataEntryValue > textarea{
+ 
+   font-family: Roboto-Medium;
+   color:#ff5a00;
+}
+.DataEntryValue > input:FOCUS, .DataEntryValue > textarea:FOCUS{
+   font-family: Roboto-Medium;
+   color: blue;
+   background-color: #d3cccc;
+
+ }
+ 
+.DataEntryWindowButtonOk{
+   background-color: white;
+   color: #ff5a00;
+   border-color: #ff5a00;
+   font-family: Roboto-Medium;
+}
+
+#Login-Admin{
+   width: 550px;
+   margin: 0 auto 0 auto;
+   float: none;
+   
+}
+
+.Current-Page{
+ 
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+}
+/******************************************************/
+
+/** Screen size 990 px **/
+@media (min-width: 990px){
+   .container{
+      width: 200px;
+   }
+}
+
+/** Screen size 1200px or greater **/
+@media (min-width: 1200px){
+   
+   footer{
+      padding: 0.62em 8.12em;
+   }
+   footer p{
+      text-align: center;
+      
+   }
+   
+   #logo{
+      width: 257px;
+      height: 128px;
+      
+   }
+   
+   #Section-Image-Fachada{
+   margin-top:128px; 
+   }
+   
+   #Image-Fachada{
+      background-size:cover;
+      width: 100%;
+      height: 317px;
+   }
+   #ImageLowCost{
+      width: 274px;
+      height: 268px;
+      
+   }
+   .Text-Article{
+      padding: 0em 2em;
+   }
+   #TextLowCost{
+      width: calc(100% - 274px);
+      
+   }
+   .container{
+     box-sizing: border-box;
+     width: 1150px;
+     margin-left: calc((100% - 1150px) / 2);
+   }
+   .Main-Article{
+      box-sizing: border-box;
+      width: 100%;
+      padding: 1.12em 3.12em;
+      font-size: 1.3em;
+   }
+   hgroup h1 {
+      font-size: 2.1em;
+   }
+   
+   nav{
+      width: calc(100% - 257px);
+      font-family: Roboto-Regular;
+      font-size: 1.5em;
+   }
+   
+   nav ul{
+      margin-top: 40px;
+      margin-left: 65px;
+      padding-left: 0px;
+      min-width: calc(4 * (9em + 1em));
+      float: left;
+   }   
+   nav ul li{
+      box-sizing: border-box;
+      padding: 0.5em 0.5em;
+      margin: 0em 0.5em;
+      color: #ff5a00;
+      /*border-color: #ff5a00;
+      border-width: 1px;
+      border-style: solid;*/
+      width: 9em;
+      
+   }
+   #Text-Timetable{
+      width: calc(100% - 224px);
+   }
+   #Image-Timetable{
+      width: 224px;
+      height: 175px;
+      
+   }
+   #Image-Parking{
+      width: 184px;
+      height: 103px;
+   }
+   #Text-Parking{
+      width: calc(100% - 184px);
+   }
+   
+   #Image-Rooms{
+      background-size:cover;
+      width: 100%;
+      height: 317px;
+   }
+   #Image-Classes{
+      background-size:cover;
+      width: 100%;
+      height: 317px;
+   }
+   #Image-Timetables{
+      background-size:cover;
+      width: 100%;
+      height: 317px;
+   }
+   #Image-Contacto{
+      background-size:cover;
+      width: 100%;
+      height: 317px;
+   }
+   #Image-Fitness-Room{
+      width: 325px;
+      height: 220px;
+   }
+   #Fitness-Room-Text{
+      width: calc(100% - 325px);
+   }
+   #Image-Collective-Rooms{
+      width: 325px;
+      height: 220px;
+   }
+   #Collective-Rooms-Text{
+      width: calc(100% - 325px);
+   }
+   #Image-Ademas{
+      width: 325px;
+      height: 220px;
+   }
+   #Ademas-Text{
+      width: calc(100% - 325px);
+   }
+   #Image-Timetable-Ciclo{
+      width: 727px;
+      height: 719px;
+   }
+   #Image-Timetable-Collective{
+      width: 732px;
+      height: 732px;
+   }
+   #Aerobic-Step-Image{
+      width: 227px;
+      height: 442px
+   }
+   #Aerobic-Step-Text{
+      width: calc(100% - 227px);
+   }
+   #GAP-Image{
+      width: 325px;
+      height: 220px;
+   }
+   #GAP-Text{
+      width: calc(100% - 325px);
+   }
+   #Ciclo-Indoor-Image{
+      width: 227px;
+      height: 442px;
+   }
+   #Ciclo-Indoor-Text{
+      width: calc(100% - 227px);
+   }
+   #Yoga-Image{
+      width: 360px;
+      height: 186px;
+      
+   }
+   #Yoga-Text{
+      width: calc(100% - 360px);
+   }
+   #Pilates-Image{
+      width: 335px;
+      height: 250px;
+   }
+   #Pilates-Text{
+      width: calc(100% - 335px);
+   }
+   #TaiChi-Image{
+      width: 413px;
+      height: 236px;
+   }
+   #TaiChi-Text{
+      width: calc(100% - 413px);
+   }
+   #Contact-Form{
+ 
+   padding: 10px 170px;
+   }
+   .DataEntryRow{
+      padding: 3px 0px;
+   }
+   .DataEntryValue > input, .DataEntryValue > textarea{
+      font-size: 0.8em;
+   }
+   .DataEntryButtonsContainer{
+      padding-left: 590px;
+   }
+   
+   /********************** Timetables style ***************************/
+   .Timetable{
+      box-sizing: border-box;
+      display: block;
+      width: 100%; 
+      padding: 0px 10%;
+      float: left;
+
+   }
+   .Timetable-Hour-Detail{
+      box-sizing: border-box;
+      display: block;
+      width: 2.5em;
+      height: 685px;
+      float:left;
+      padding-top: 25px;
+      font-size: 0.6em;
+      text-align: right;
+      
+      margin-right: 5px;
+      
+    
+   }
+   .Timetable-Day-Detail{
+      box-sizing: border-box;
+      display: block;
+      width: 5.3em;
+      height: 685px;
+      float:left;
+      
+   }
+   .Timetable-Header{
+      text-align: center;
+   }
+   .Timetable-Hour-Detail-Quarter{
+      width: 2.5em;
+      box-sizing: border-box;
+      display: block;
+      min-height: 22px;
+   }
+   .Timetable-Day-Detail-Activities{
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      margin-top: 5px;
+      height: 660px;
+      position: relative;  
+   }
+   .Timetable-Day-Detail-Right-Line{
+      border-right-color: black;
+      border-right-style: solid;
+      border-right-width: 1px;
+   }
+   .Activity-Detail{
+      position: absolute;
+      box-sizing: border-box;
+      display: block;
+      width: calc(100% - 2px);
+      margin: 0px 1px;
+      color: white;
+      font-size: 0.55em;
+      text-align: center;
+      font-family: Roboto-Bold;
+      
+   }
+   
+   /* blog */
+   
+   #Blog-List{
+      box-sizing: border-box;
+      display: block;
+      float: left;
+   }
+   
+   #Blog-Aside{
+      box-sizing: border-box;
+      display: block;
+      float:left;
+   }
+   #Facebook{
+      box-sizing: border-box;
+      display: block;
+      min-width: 350px;
+      min-height: 400px;
+   }

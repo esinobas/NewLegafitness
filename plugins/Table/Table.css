@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+.Table{
+   width: 100%;
+   box-sizing: border-box;
+   display: block;
+   float: left;
+}
+
+.Table-Row{
+ 
+   box-sizing: border-box;
+   display: block;
+   width: 100%;
+   padding: 0.18em 0em;
+   float: left;
+}
+.Table-Column{
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   padding: 0em 0.18em;
+   height: 100%;
+}
+.Table-Header{
+   
+   font-size: 1em;
+   background-color: gray;
+   font-weight: bold;
+   display: block;
+   float: left;
+}
+.Table-Header > .Table-Column{
+ 
+    text-align: center;
+}

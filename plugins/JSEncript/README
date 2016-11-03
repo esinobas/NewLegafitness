@@ -1,0 +1,14 @@
+ <script src="bin/jsencrypt.min.js"></script>
+
+
+
+          // Encrypt with the public key...
+          var encrypt = new JSEncrypt();
+          encrypt.setPublicKey($('#pubkey').val());
+          var encrypted = encrypt.encrypt($('#input').val());
+
+          // Decrypt with the private key...
+          var decrypt = new JSEncrypt();
+          decrypt.setPrivateKey($('#privkey').val());
+          var uncrypted = decrypt.decrypt(encrypted);
+

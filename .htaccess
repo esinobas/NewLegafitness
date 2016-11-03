@@ -1,0 +1,23 @@
+#Options +FollowSymlinks
+Options -MultiViews
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f  
+
+RewriteBase /
+
+#Administration
+RewriteCond %{REQUEST_URI} ^/admin$ [NC]
+RewriteRule ^(.*)$ admin.php [QSA,L]
+
+RewriteCond %{REQUEST_URI} ^/dashboard$ [NC]
+RewriteRule ^(.*)$ dashboard.php [QSA,L]
+
+RewriteCond %{REQUEST_URI} ^/Horarios/.*$ [NC]
+RewriteRule ^([a-zA-Z]+)/Clases-Ciclo$ /index.php?p=Horarios&anchor=Anchor-Timetable-Cicle [NE,L]
+RewriteRule ^([a-zA-Z]+)/Clases-Colectivas$ /index.php?p=Horarios&anchor=Anchor-Timetable-Collective-Classes [NE,L]
+
+#Web
+RewriteCond %{REQUEST_URI} ^/.*$ [NC]
+RewriteRule ^([a-zA-Z]+)$ /?p=$1 [QSA,L]
+
