@@ -33,22 +33,28 @@ function JSLogger(){
    function getClassName(){
       
       var stack  = new Error("Dummy").stack;
-      var functionName = stack.split("\n")[3];
-      functionName = functionName.split("/")[functionName.split("/").length-1];
-      functionName = functionName.split(":")[0];
-      functionName = functionName.split(".")[0];
-      return functionName;
+      if (stack != undefined){
+         var functionName = stack.split("\n")[3];
+         functionName = functionName.split("/")[functionName.split("/").length-1];
+         functionName = functionName.split(":")[0];
+         functionName = functionName.split(".")[0];
+         return functionName;
+      }
+      return "IE. No ClasName";
       
    }
    
    function getFunctionName(){
       
       var stack  = new Error("Dummy").stack;
-      var className = stack.split("\n")[3].split("@")[0];
-      if (className == ""){
-         className = "main";
-      }
+      if (stack != undefined){
+         var className = stack.split("\n")[3].split("@")[0];
+         if (className == ""){
+            className = "main";
+         }
       return className;
+      }
+      return "IE. No functionName"; 
    }
    
    function writeLog(theLevel,theLog){
