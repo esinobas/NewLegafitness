@@ -129,7 +129,7 @@
       <footer>
          <p>LEGAFITNESS.</p>
          <p>C/ del Charco 13. 28911. Léganes. Madrid.</p>
-         <p>info@legafiness.com</p>
+         <p>info@legafitness.com</p>
       </footer>
    </body>
 
