@@ -41,10 +41,11 @@
          $subject = $emailData[EMAIL_SUBJECT];
          $message = $emailData[EMAIL_MESSAGE];
          $from = $emailData[EMAIL_FROM];
-         $headers = "From : $from \r\n";
+         $headers = 'MIME-Version: 1.0' . "\r\n";
+         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+         $headers .= "From: $from \r\n";
+         $headers .= "Reply-To: $from \r\n";
          $headers .= "X-Mailer: ". phpversion() ."\r\n";
-         $headers .= 'MIME-Version: 1.0' . "\r\n";
-         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
          $loggerM->debug("Sending email to [ $toMail ] from [ $from ] with subject [ $subject ]");
          if (mail($toMail, $subject, $message, $headers)){
             $loggerM->debug("The email was sent succcessfull");

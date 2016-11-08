@@ -112,7 +112,7 @@ ContactForm.sendContactFormToServer = function (theDataContactForm){
                                           data['Email']).replace(/\"/g,"\\\""));
    requestParams.emailsData[0].from = data['Nombre'] + " " + 
    data['Apellidos'] + 
-                                  "[ " + data['Email'] + " ]";
+                                  "<" + data['Email'] + ">";
 
    JSLogger.getInstance().debug("Contact data [ " + JSON.stringify(requestParams) +" ]");
    
