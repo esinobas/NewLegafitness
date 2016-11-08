@@ -16,7 +16,7 @@ JSLogger.getInstance().registerLogger("ContactForm", JSLogger.levelsE.WARN);
 /**
  * Constant with the email address
  */
-const EMAIL_ADDRESS_C = "info@legafiness.com";
+const EMAIL_ADDRESS_C = "info@legafitness.com";
 /**
  * Constant with the server url
  */
