@@ -275,7 +275,7 @@
       
    }
    /////////////////////////////////////////////////////////////////////////
-   function getCollectiveClasses(){
+   function getActivities(){
       ?>
          <script type="text/javascript">
             $('#Menu-Actividades').addClass('Current-Page');

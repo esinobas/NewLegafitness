@@ -112,7 +112,7 @@
                      getRooms();
                   }
                   if ($_GET['p']=='Actividades'){
-                     getCollectiveClasses();
+                     getActivities();
                   }
                   if ($_GET['p']=='Blog'){
                       getBlog();
