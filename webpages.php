@@ -14,13 +14,13 @@
     * This file contains functions to show page web
     */
    /////////////////////////////////////////////////////////////////////////
-   function getArticleConceptLowCost(){
+   function getArticleAllFitnessYouWant(){
       ?>
-         <article id="ConceptLowCost" class="Main-Article Orange-Article">
+         <article id="AllFitnessYouWant" class="Main-Article Orange-Article">
             <hgroup> 
-               <h1>Concepto Low Cost</h1>
+               <h1>Todo el Fitness que quieras</h1>
             </hgroup>
-            <div id="ImageLowCost">
+            <div id="ImageAllFitnessYouWant">
             </div>
             <div id="TextLowCost" class="Text-Article">
                <p>
@@ -82,7 +82,7 @@
    /////////////////////////////////////////////////////////////////////////
    function getHome(){
    
-      getArticleConceptLowCost();
+      getArticleAllFitnessYouWant();
       getArticleTimeTable();
       getArticleparking();
     
