@@ -364,18 +364,7 @@
                </p>  
             </div>
          </article>
-         <article id="TaiChi" class="Main-Article White-Article">
-            <h2>Tai-Chi</h2>
-            <div id="TaiChi-Text" class="Text-Article">
-               <p>
-                  La tradición oriental para mejorar y restablecer tu salud. 
-                  Deja llevarte por la filosofía tradicional china controlando 
-                  la respiración y equilibrando tu cuerpo.
-               </p>
-            </div>
-            <div id="TaiChi-Image" class="Class-Article-Image">
-            </div>
-         </article>
+         
       <?php 
    }
    

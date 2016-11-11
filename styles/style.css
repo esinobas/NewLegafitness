@@ -286,9 +286,6 @@ hgroup h1 {
 #Pilates-Image{
    background-image: url("../images/Pilates.jpg");
 }
-#TaiChi-Image{
-   background-image: url("../images/TaiChi.jpg");
-}
 
 #Contact-Form{
  
@@ -513,13 +510,7 @@ hgroup h1 {
    #Pilates-Text{
       width: calc(100% - 335px);
    }
-   #TaiChi-Image{
-      width: 413px;
-      height: 236px;
-   }
-   #TaiChi-Text{
-      width: calc(100% - 413px);
-   }
+  
    #Contact-Form{
  
    padding: 10px 170px;
