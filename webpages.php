@@ -365,9 +365,7 @@
             </div>
          </article>
          <article id="Zumba" class="Main-Article White-Article">
-         <h2>Zumba</h2>
-            <div id="Zumba-Image" class="Class-Article-Image">
-            </div>
+            <h2>Zumba</h2>
             <div id="Zumba-Text" class="Text-Article">
                <p>
                   Zumba es un movimiento o disciplina fitness de origen colombiano, 
@@ -379,6 +377,22 @@
                   La zumba utiliza dentro de sus rutinas los principales ritmos latinoamericanos,
                    como son la salsa, el merengue, la cumbia, el reggaeton y la samba. 
                    En cada sesión de Zumba se pueden llegar a quemar 800 calorías 
+               </p>  
+            </div>
+            <div id="Zumba-Image" class="Class-Article-Image">
+            </div>
+         </article>
+          <article id="Cardio-Tonic" class="Main-Article Orange-Article">
+         <h2>Cardio-Tonic</h2>
+            <div id="Cardio-Tonic-Image" class="Class-Article-Image">
+            </div>
+            <div id="Cardio-Tonic-Text" class="Text-Article">
+               <p>
+                  El cardiotonic es un tipo de entrenamiento completo cuyos objetivos son 
+                  la mejora del sistema cardiovascular y la tonificación de sistema muscular, 
+                  lo que convierte a esta actividad en un ejercicio idóneo para la mejora de la condición física general. 
+                  Se trabaja por intervalos la actividad cardiovascular y la tonificación muscular, 
+                  combinada con coreografías al ritmo de la música.
                </p>  
             </div>
          </article>

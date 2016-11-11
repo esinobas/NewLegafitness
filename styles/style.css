@@ -289,6 +289,9 @@ hgroup h1 {
 #Zumba-Image{
    background-image: url("../images/zumba564x309.jpg");
 }
+#Cardio-Tonic-Image{
+   background-image: url("../images/cardio-tonic-mini-_x230.jpg");
+}
 #Contact-Form{
  
    display: block;
@@ -514,10 +517,18 @@ hgroup h1 {
    }
   #Zumba-Image{
      height: 309px;
-      width: 360px;
+     width: 360px;
   }
    #Zumba-Text{
       width: calc(100% - 360px);
+   }
+   
+   #Cardio-Tonic-Image{
+      width: 320px;
+      height: 230px;
+   }
+   #Cardio-Tonic-Text{
+      width: calc(100% - 320px);
    }
    #Contact-Form{
  
