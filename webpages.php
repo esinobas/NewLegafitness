@@ -278,7 +278,7 @@
    function getCollectiveClasses(){
       ?>
          <script type="text/javascript">
-            $('#Menu-Clases').addClass('Current-Page');
+            $('#Menu-Actividades').addClass('Current-Page');
          </script>
          <article id="Aerobic-Step" class="Main-Article Orange-Article">
             <h2>Aerobic-Step</h2>

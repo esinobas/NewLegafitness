@@ -68,7 +68,7 @@
                      <li><a href="/Horarios/Clases-Colectivas">Clases Colectivas</a></li>
                   </ul>
                </li>
-               <li id="Menu-Clases"><a href="/Actividades">Actividades</a></li>
+               <li id="Menu-Actividades"><a href="/Actividades">Actividades</a></li>
                <li id="Menu-Contacto"><a href="/Contacto">Contacto</a></li>
                <li id="Menu-Blog"><a href="/Blog">Blog</a></li>
             </ul>
