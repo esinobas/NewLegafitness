@@ -135,6 +135,29 @@
                </ul>
             </div>
          </article>
+         <article id="Use-Rules" class="Main-Article Orange-Article">
+            <div id="Uses-Rules-Text" class="Text-Article">
+               <h2>Reglamento de Uso</h2>
+               <ol>
+                  <li> Es obligatorio el acceso a la sala con calzado deportivo, ropa deportiva y toalla.</li>
+                  <li> No se permite el acceso a clases sin camiseta, en bañador o con zapatillas de baño.</li>
+                  <li> Una vez completado el aforo de plazas no se podrá asistir a la clase.</li>
+                  <li> Se ruega máxima puntualidad en el inicio de la clase, ya que el calentamiento
+                  es esencial para un buen entrenamiento, al igual que es muy importante no abandonar 
+                  la sesión antes de que ésta finalice.</li>
+                  <li> Si sufre algún tipo de lesión, enfermedad o toma medicación especial que pueda
+                  afectarle en la práctica del ejercicio físico, le rogamos se lo comunique al monitor responsable de la clase.</li>
+                  <li> Asegúrese de que el contenido e intensidad de las sesiones son los adecuados 
+                  a su nivel actual de condición física.</li>
+                  <li> Por razones de higiene es obligatorio usar toalla en los ejercicios de suelo.</li>
+                  <li> Procure hidratarse antes y después de la práctica del ejercicio físico.
+                   Es recomendable beber 200 ml. de agua cada 15 ó 20 minutos.</li>
+                  <li> No se permite el uso del teléfono móvil dentro de la sala.</li>
+                  <li> Para poder acceder a una clase, deberá esperar que finalice la anterior. </li>
+                  <li> No se permite fumar, comer e introducir objetos de vidrio en la sala.</li
+               </ol>
+            </div>
+         </article>
          
          
       <?php 
