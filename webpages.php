@@ -364,6 +364,24 @@
                </p>  
             </div>
          </article>
+         <article id="Zumba" class="Main-Article White-Article">
+         <h2>Zumba</h2>
+            <div id="Zumba-Image" class="Class-Article-Image">
+            </div>
+            <div id="Zumba-Text" class="Text-Article">
+               <p>
+                  Zumba es un movimiento o disciplina fitness de origen colombiano, 
+                  enfocado por una parte a mantener un cuerpo saludable y por otra a desarrollar,
+                   fortalecer y dar flexibilidad al cuerpo mediante movimientos de baile 
+                   combinados con una serie de rutinas aeróbicas.
+                </p>
+                <p>
+                  La zumba utiliza dentro de sus rutinas los principales ritmos latinoamericanos,
+                   como son la salsa, el merengue, la cumbia, el reggaeton y la samba. 
+                   En cada sesión de Zumba se pueden llegar a quemar 800 calorías 
+               </p>  
+            </div>
+         </article>
          
       <?php 
    }

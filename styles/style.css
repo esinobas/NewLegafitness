@@ -286,7 +286,9 @@ hgroup h1 {
 #Pilates-Image{
    background-image: url("../images/Pilates.jpg");
 }
-
+#Zumba-Image{
+   background-image: url("../images/zumba564x309.jpg");
+}
 #Contact-Form{
  
    display: block;
@@ -510,7 +512,13 @@ hgroup h1 {
    #Pilates-Text{
       width: calc(100% - 335px);
    }
-  
+  #Zumba-Image{
+     height: 309px;
+      width: 360px;
+  }
+   #Zumba-Text{
+      width: calc(100% - 360px);
+   }
    #Contact-Form{
  
    padding: 10px 170px;
