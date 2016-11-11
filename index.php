@@ -85,7 +85,7 @@
             }
             if ($_GET['p'] == "Actividades"){
             ?>
-               <div id="Image-Classes"></div>
+               <div id="Image-Activities"></div>
             <?php
             }
             if ($_GET['p'] == "Blog"){
