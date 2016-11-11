@@ -304,9 +304,9 @@
          <script type="text/javascript">
             $('#Menu-Actividades').addClass('Current-Page');
          </script>
-         <article id="Aerobic-Step" class="Main-Article Orange-Article">
-            <h2>Aerobic-Step</h2>
-            <div id="Aerobic-Step-Image" class="Class-Article-Image">
+         <article id="Combo-Style" class="Main-Article Orange-Article">
+            <h2>Combo-Style</h2>
+            <div id="Combo-Style-Image" class="Class-Article-Image">
             </div>
             <div id="Aerobic-Step-Text" class="Text-Article">
                <p>
@@ -360,7 +360,7 @@
                <p>
                   Fortalecimiento muscular y estiramientos dirigidos a ejercitar 
                   tu cuerpo y mente; mejorar tu equilibrio y flexibilidad, y por
-                   supuesto, tu salud. 
+                   supuesto tu columna vertebral y tu salud general. 
                </p>  
             </div>
          </article>
