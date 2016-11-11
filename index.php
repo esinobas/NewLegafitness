@@ -68,7 +68,7 @@
                      <li><a href="/Horarios/Clases-Colectivas">Clases Colectivas</a></li>
                   </ul>
                </li>
-               <li id="Menu-Clases"><a href="/Clases">Clases Colectivas</a></li>
+               <li id="Menu-Clases"><a href="/Actividades">Actividades</a></li>
                <li id="Menu-Contacto"><a href="/Contacto">Contacto</a></li>
                <li id="Menu-Blog"><a href="/Blog">Blog</a></li>
             </ul>
@@ -83,7 +83,7 @@
                <div id="Image-Rooms"></div>
             <?php 
             }
-            if ($_GET['p'] == "Clases"){
+            if ($_GET['p'] == "Actividades"){
             ?>
                <div id="Image-Classes"></div>
             <?php
@@ -111,7 +111,7 @@
                   if ($_GET['p']=='Salas'){
                      getRooms();
                   }
-                  if ($_GET['p']=='Clases'){
+                  if ($_GET['p']=='Actividades'){
                      getCollectiveClasses();
                   }
                   if ($_GET['p']=='Blog'){
@@ -128,7 +128,7 @@
       </section>
       <footer>
          <p>LEGAFITNESS.</p>
-         <p>C/ del Charco 13. 28911. Léganes. Madrid.</p>
+         <p>C/ El Charco 13. 28911. Léganes. Madrid.</p>
          <p>info@legafitness.com</p>
       </footer>
    </body>
