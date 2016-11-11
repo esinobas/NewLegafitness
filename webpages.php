@@ -115,8 +115,8 @@
             <div id="Collective-Rooms-Text" class="Text-Article">
                <h2>2 salas de Clases Colectivas</h2>
                <p>Disfruta de las últimas tendencias: <br>
-               Aerobic-Step, Ciclo 
-               Indoor, GAP, Pilates, Yoga y Tai-chi.</p>
+               Combo-Style, Zumba, GAP, Cardio-Tonic, Yoga, Pilates, Abdomen, 
+               Ciclo y Ciclo Virtual.</p>
             </div>
             <div id="Image-Collective-Rooms">
             </div>
@@ -130,7 +130,8 @@
                   <li>Más de 200 máquinas diferentes.</li>
                   <li>Máquinas de musculación y cardio de última generación.</li>
                   <li>Sauna para relax.</li>
-                  <li>Espaciosas áreas de vestuarios, duchas y taquillas para tu mayor comodidad.</li>
+                  <li>Espaciosas áreas de vestuarios, duchas gratuitas y 
+                  taquillas para tu mayor comodidad.</li>
                </ul>
             </div>
          </article>
