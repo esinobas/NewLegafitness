@@ -611,7 +611,13 @@ hgroup h1 {
    }
    
    /* News */
-   
+   #News{
+      box-sizing: border-box;
+      display: block;
+      float: left;
+      min-height: 500px;
+      height: 500px;
+     }
    #News-List{
       box-sizing: border-box;
       display: block;
