@@ -270,7 +270,8 @@
                <h1>Horarios</h1>
             </hgroup>
             <span class="Aclaration-Text">
-               La dirección se reserva el derecho a modificar los horarios y clases sin previo aviso.
+               Por razones objetivas los horarios podrán ser modificados, siendo comunicado
+               con la mayor antelación posible a los socios del club.
             </span>
             <span id="Anchor-Timetable-Cicle" class="Anchor"></span>
             <div id="TimeTable-Ciclo" class="Timetable">
