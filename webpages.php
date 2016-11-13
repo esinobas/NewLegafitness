@@ -494,11 +494,7 @@
             <div id="Blog-Post-By-Date">
             </div>
          </div>
-         <div id="Facebook">
-            <div class="fb-page" data-href="https://www.facebook.com/Legafitness-274751752559485" data-tabs="timeline" data-width="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Legafitness-274751752559485" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Legafitness-274751752559485">Legafitness</a></blockquote></div>
          
-         <!--  <div class="fb-page" data-href="https://es-es.facebook.com/Legafitness-274751752559485" data-tabs="timeline" data-width="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"></div> -->
-         </div>
       </aside>
       
    <?php    
