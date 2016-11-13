@@ -57,7 +57,7 @@
                </li>
                <li id="Menu-Actividades"><a href="/Actividades">Actividades</a></li>
                <li id="Menu-Contacto"><a href="/Contacto">Contacto</a></li>
-               <li id="Menu-Blog"><a href="/Blog">Blog</a></li>
+               <li id="Menu-News"><a href="/Noticias">Noticias</a></li>
             </ul>
          </nav>
       </header>
@@ -75,7 +75,7 @@
                <div id="Image-Activities"></div>
             <?php
             }
-            if ($_GET['p'] == "Blog"){
+            if ($_GET['p'] == "Noticias"){
                 
             }
             if ($_GET['p'] == "Horarios"){
@@ -101,8 +101,8 @@
                   if ($_GET['p']=='Actividades'){
                      getActivities();
                   }
-                  if ($_GET['p']=='Blog'){
-                      getBlog();
+                  if ($_GET['p']=='Noticias'){
+                      getNews();
                   }
                   if ($_GET['p']=='Horarios'){
                      getTimeTables();

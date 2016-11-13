@@ -610,22 +610,17 @@ hgroup h1 {
       
    }
    
-   /* blog */
+   /* News */
    
-   #Blog-List{
+   #News-List{
       box-sizing: border-box;
       display: block;
       float: left;
    }
    
-   #Blog-Aside{
+   #News-Aside{
       box-sizing: border-box;
       display: block;
       float:left;
    }
-   #Facebook{
-      box-sizing: border-box;
-      display: block;
-      min-width: 350px;
-      min-height: 400px;
-   }
+  

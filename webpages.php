@@ -480,18 +480,18 @@
       dialog();
    }
    //////////////////////////////////////////////////////////////////////////
-   function getBlog(){
+   function getNews(){
    ?>
       <script type="text/javascript">
-      $('#Menu-Blog').addClass('Current-Page');
+      $('#Menu-News').addClass('Current-Page');
       </script>
-      <article id="Blog" class="Main-Article Orange-Article">
+      <article id="News" class="Main-Article Orange-Article">
       </article>
-      <aside id="Blog-Aside">
-         <div id="Blog-Post-Index">
-            <div id="Blog-Last-Five-Post">
+      <aside id="News-Aside">
+         <div id="News-Post-Index">
+            <div id="News-Last-Five-Post">
             </div>
-            <div id="Blog-Post-By-Date">
+            <div id="News-Post-By-Date">
             </div>
          </div>
          
