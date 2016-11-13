@@ -426,35 +426,42 @@
          <div id="Contact-Form">
             <div class="DataEntryContainer">
                <div class="DataEntryRow">
-                  <div class="DataEntryLabel" id="Nombre">Nombre</div>
+                  <div class="DataEntryLabel" id="Nombre">Nombre<sup>*</sup></div>
                   <div class="DataEntryValue" id="Name-Value">
                      <input type="text">
                   </div>
                </div>
                <div class="DataEntryRow">
-                  <div class="DataEntryLabel" id="Apellidos">Apellidos</div>
+                  <div class="DataEntryLabel" id="Apellidos">Apellidos<sup>*</sup></div>
                   <div class="DataEntryValue" id="SurnameValue">
                      <input type="text">
                   </div>
                </div>
                <div class="DataEntryRow">
-                  <div class="DataEntryLabel" id="Email">Correo Electrónico</div>
+                  <div class="DataEntryLabel" id="Email">Correo Electrónico<sup>*</sup></div>
                   <div class="DataEntryValue" id="EmailValue">
                      <input type="text">
                   </div>
                </div>
                <div class="DataEntryRow">
-                  <div class="DataEntryLabel" id="Re-Email">Re-Correo Electrónico</div>
+                  <div class="DataEntryLabel" id="Re-Email">Re-Correo Electrónico<sup>*</sup></div>
                   <div class="DataEntryValue" id="Re-emailValue">
                      <input type="text">
                   </div>
                </div>
                <div class="DataEntryRow">
-                  <div class="DataEntryLabel" id="Comentarios">Comentarios</div>
+                  <div class="DataEntryLabel" id="Asunto">Asunto</div>
+                  <div class="DataEntryValue" id="Subject">
+                     <input type="text">
+                  </div>
+               </div>
+               <div class="DataEntryRow">
+                  <div class="DataEntryLabel" id="Comentarios">Comentarios<sup>*</sup></div>
                   <div class="DataEntryValue" id="ComentsValue">
                      <textarea rows="10" required></textarea>
                   </div>
                </div>
+               <span style="font-size: 75%">* Datos Obligatorios</span>
             </div>
             <div class="DataEntryButtonsContainer">
                <div class="Round-Corners-Button DataEntryWindowButtonOk" id="Button-Contact" title="Enviar">Enviar</div>
