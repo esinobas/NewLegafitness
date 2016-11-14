@@ -102,7 +102,7 @@
       
        
       <script type="text/javascript">
-        JSLogger.getInstance().registerLogger("Admin",JSLogger.levelsE.TRACE);
+        JSLogger.getInstance().registerLogger("Admin",JSLogger.levelsE.WARN);
 
          function showError(theError){
             JSLogger.getInstance().traceEnter();
@@ -150,6 +150,13 @@
          }
          //When the document has been load completly, bind the button to the function
          $(document).ready(function(){
+
+            $('input').keypress(function(e){
+               if (e.which == 13){
+                  sendDataToLogin();
+               }
+            });
+            
             $('#Button-Contact').click(function(){
                JSLogger.getInstance().traceEnter();
                sendDataToLogin();
