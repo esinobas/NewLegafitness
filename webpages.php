@@ -450,7 +450,7 @@
                   </div>
                </div>
                <div class="DataEntryRow">
-                  <div class="DataEntryLabel" id="Asunto">Asunto</div>
+                  <div class="DataEntryLabel" id="Asunto">Asunto<sup>*</sup></div>
                   <div class="DataEntryValue" id="Subject">
                      <input type="text">
                   </div>
@@ -470,6 +470,13 @@
       </article>
       <!-- Bind the button for send the contact form to the function -->
       <script type="text/javascript">
+
+         $('input').keypress(function(e){
+            if (e.which == 13){
+               $('#Button-Contact').click();
+            }
+         });
+      
          $('#Button-Contact').click(function(){
             var dataContactForm = DataEntryFunctions.getValues('#Contact-Form');
             
