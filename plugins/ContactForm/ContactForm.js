@@ -109,7 +109,7 @@ ContactForm.sendContactFormToServer = function (theDataContactForm){
    requestParams.emailsData[0].message = encodeURIComponent("Direccion de correo: " +
           data['Email'].replace(/\"/g,"\\\"")+"<br>"+data['Comentarios'].replace(/\"/g,"\\\"").replace(/\r/g,"<br>").replace(/\n/g,"<br>"));
    requestParams.emailsData[0].subject = encodeURIComponent((
-                                          data['Email']).replace(/\"/g,"\\\""));
+                                          data['Asunto']).replace(/\"/g,"\\\""));
    requestParams.emailsData[0].from = data['Nombre'] + " " + 
    data['Apellidos'] + 
                                   "<" + data['Email'] + ">";
