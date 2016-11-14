@@ -25,7 +25,7 @@
             <div id="TextLowCost" class="Text-Article">
                <p>
                    No tienes excusa para no estar en forma y pasarlo fenomenal. 
-                   Todo, pero todo el gimnasio destinado para ti, por sólo <span class="StandOut-Text">26€/mes</span>. 
+                   Todo, pero todo el gimnasio destinado para ti, por sólo <span class="StandOut-Text">21,60€/mes</span>. 
                    <span class="StandOut-Text">Y ese es el precio final</span>.
                </p>
                <p>
