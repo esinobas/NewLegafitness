@@ -289,12 +289,14 @@ $tbNews->open();
                //$('.ListboxItem').removeClass('ListBoxItemSelected');
                $(this).addClass('ListBoxItemSelected');
             });
+            
          }else{
             //The operation is an update, modified the listboxitem name
             //JSLogger.getInstance().trace(" -> #" + parseInt(selectedNewIdM));
             $('#' + parseInt(selectedNewIdM)).empty();
             $('#' + parseInt(selectedNewIdM)).append($('.Blog-Title > p').html());
          }
+         showSaveSuccess();
       }else{
          JSLogger.getInstance().error("The datas has not been saved. An error has been produced [ " +
                JSON.parse(response)['ErrorMsg'] +" ]");

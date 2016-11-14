@@ -84,6 +84,21 @@
       <script type="text/javascript">
          JSLogger.getInstance().registerLogger("Dashboard",JSLogger.levelsE.ERROR);
 
+         ///////////////////////////////////////////////////////////////////////////////////////77
+         /**
+          * Shows a dialog to inform the changes were saved
+          */
+         function showSaveSuccess(){
+            $('#Dialog-Text').empty();
+            $('#Dialog').attr('title', 'Guardar');
+            $('#Dialog-Text').append('Los datos se han guardado satisfactoriamente');
+            $('#Dialog').dialog({
+               modal: true,
+               resizable: false,
+               width: 'auto',
+               buttons: [{text:'OK',click: function(){$(this).dialog('close');}}]
+            });
+         }
          /////////////////////////////////////////////////////////////////////////////////////////////////////////////
          /** 
           * Shows a dialog with the error description

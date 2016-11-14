@@ -444,6 +444,7 @@ include_once("php/Database/Tables/TB_Timetable.php");
 
              modifiedWithoutSaveM = false;
           }
+          showSaveSuccess();
        }else{
             JSLogger.getInstance().error("The Timetable data has not been saved. An error has been produced [ " +
                         JSON.parse(response)['ErrorMsg'] +" ]");
