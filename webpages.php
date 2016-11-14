@@ -32,7 +32,7 @@
                   Así es la filosofía low cost que hemos querido ofrecerte para 
                   que todo Leganés disfrute de un mundo de ejercicios, máquinas 
                   de última generación, clases colectivas y asesores de fitness,
-                   sólo para ti. Sólo por <span class="StandOut-Text">26€/mes</span>. 
+                   sólo para ti. Sólo por <span class="StandOut-Text">21,60€/mes</span>. 
                </p>
             </div>
          </article>
