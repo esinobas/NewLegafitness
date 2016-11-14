@@ -17,6 +17,7 @@ JSLogger.getInstance().registerLogger("ContactForm", JSLogger.levelsE.WARN);
  * Constant with the email address
  */
 const EMAIL_ADDRESS_C = "info@legafitness.com";
+//const EMAIL_ADDRESS_C = "esteban.sinobas@gmail.com";
 /**
  * Constant with the server url
  */
@@ -88,6 +89,39 @@ ContactForm.checkEmail = function (theDataContactForm){
    return true;
 }
 
+/**
+ * Sends a confirmation email to the person
+ * 
+ * @param theName
+ * @param theSurName
+ * @param theEmail
+ */
+ContactForm.sendConfirmationEmail = function (theName, theSurName, theEmail){
+   JSLogger.getInstance().traceEnter();
+   JSLogger.getInstance().trace("The email is sent to [ " + theEmail + "]");
+   
+   JSLogger.getInstance().debug("Url where the email data is sent [ " + 
+         SERVER_URL_C + " ]");
+   var resultCode = true;
+   
+   var requestParams = {};
+   requestParams.emailsData = {};
+   requestParams.emailsData[0] = {};
+   requestParams.emailsData[0].address = theEmail;
+   
+   requestParams.emailsData[0].message = "Por favor no contestar a este correo. Es una confirmación de que hemos recibido correctamente su correo. Nos pondremos lo más brevemente posible con usted";
+   requestParams.emailsData[0].subject = "No reply. Confirmación Contacto";
+   requestParams.emailsData[0].from = "Legafitness <info@legafitness.com>";
+
+   JSLogger.getInstance().debug("Confirm data [ " + JSON.stringify(requestParams) +" ]");
+   var requestResponse = sendSynAjaxRequestWithPost(SERVER_URL_C, requestParams);
+   JSLogger.getInstance().debug("Request response [ " + requestResponse + " ]");
+   if (requestResponse != "0"){
+      JSLogger.getInstance().error("An error has been produced in confirm email");
+   }
+ 
+   JSLogger.getInstance().traceExit();
+}
 
 /**
  * @param theDataContactForm is a string in JSON format with the 
@@ -124,6 +158,7 @@ ContactForm.sendContactFormToServer = function (theDataContactForm){
       resultCode = false;
    }else{
       JSLogger.getInstance().debug("The contact form has been sent successfull");
+      ContactForm.sendConfirmationEmail("", "", data['Email']);
       ContactForm.showDialog("Información","El envio se ha realizado correctamente.<br>Atenderemos su petición lo más rápido posible.<br>Gracias");
    }
    JSLogger.getInstance().traceExit();
