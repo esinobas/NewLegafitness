@@ -25,14 +25,13 @@
             <div id="TextLowCost" class="Text-Article">
                <p>
                    No tienes excusa para no estar en forma y pasarlo fenomenal. 
-                   Todo, pero todo el gimnasio destinado para ti, por sólo <span class="StandOut-Text">21,60€/mes</span>. 
-                   <span class="StandOut-Text">Y ese es el precio final</span>.
+                   Todo, pero todo el gimnasio destinado para ti, desde  <span class="StandOut-Text"> 21,60€/mes</span>. 
                </p>
                <p>
                   Así es la filosofía low cost que hemos querido ofrecerte para 
                   que todo Leganés disfrute de un mundo de ejercicios, máquinas 
                   de última generación, clases colectivas y asesores de fitness,
-                   sólo para ti. Sólo por <span class="StandOut-Text">21,60€/mes</span>. 
+                   sólo para ti. Desde <span class="StandOut-Text">21,60€/mes</span>. 
                </p>
             </div>
          </article>
