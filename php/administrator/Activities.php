@@ -261,6 +261,7 @@ $tbActivity->open();
          activityColor + " ] and the font color is [ " + 
          activityFontColor + " ] ");
         sendActivityDataToServer(activityName, activityColor, activityFontColor);
+        $('#Dialog-New-Activity').dialog('close');
       JSLogger.getInstance().traceExit()
    }
    ////////////////////////////////////////////////////////////////////
@@ -275,7 +276,8 @@ $tbActivity->open();
          buttons: [{
             text: 'OK', click: function(){
                   getAndSendNewActivityData();
-                  $(this).dialog('close');}
+                 //$(this).dialog('close');
+                  }
             },
             {
             text: 'Cancelar', click: function(){$(this).dialog('close');}
