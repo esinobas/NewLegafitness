@@ -65,7 +65,7 @@ $tbActivity->open();
 
 <!-- Bind the new Activity button with its funtion -->
 <script type="text/javascript">
-   JSLogger.getInstance().registerLogger("Activities.php",JSLogger.levelsE.ERROR);
+   JSLogger.getInstance().registerLogger("Activities.php",JSLogger.levelsE.TRACE);
 
    
    /////////////////////////////////////////////////////////////////////////////
@@ -200,11 +200,13 @@ $tbActivity->open();
     *
     * @param theActivityName. String with the activity name
     * @param theActivityColor. String with the activity color in hexadecimal format
+    * @param theActivityFontColor. String with the font color activity in hexadecimal format.
     */
-   function sendActivityDataToServer(theActivityName, theActivityColor){
+   function sendActivityDataToServer(theActivityName, theActivityColor, theActivityFontColor){
       JSLogger.getInstance().traceEnter();
       JSLogger.getInstance().debug("theActivityName [ " + theActivityName +
-            " ], theActiviyColor [ " + theActivityColor +" ]");
+            " ], theActiviyColor [ " + theActivityColor +" ] and theActivityFontColor [ "+
+            theActivityFontColor + " ]");
 
       var requestParams = {};
       requestParams.<?php print(COMMAND);?> = "<?php print(COMMAND_INSERT);?>";
@@ -213,7 +215,8 @@ $tbActivity->open();
       requestParams.<?php print(PARAMS);?>.<?php print(PARAM_DATA);?> = {};
       requestParams.<?php print(PARAMS);?>.<?php print(PARAM_DATA);?>.<?php print(TB_Activity::NombreColumnC)?> = encodeURIComponent(theActivityName.replace(/\"/g,"\\\""));
       requestParams.<?php print(PARAMS);?>.<?php print(PARAM_DATA);?>.<?php print(TB_Activity::ColorColumnC)?> = encodeURIComponent(theActivityColor.replace(/\"/g,"\\\"")); 
-
+      requestParams.<?php print(PARAMS);?>.<?php print(PARAM_DATA);?>.<?php print(TB_Activity::FontColorColumnC)?> = encodeURIComponent(theActivityFontColor.replace(/\"/g,"\\\""));
+            
       JSLogger.getInstance().debug("Command parameters [ " + JSON.stringify(requestParams) +" ]");
       var response = sendSynAjaxRequestWithPost("<?php print(URL_REQUEST_FROM_WEB_C);?>", requestParams);
       JSLogger.getInstance().debug("Response [ " + JSON.stringify(response) +" ]");
@@ -246,13 +249,16 @@ $tbActivity->open();
     */
    function getAndSendNewActivityData(){
       JSLogger.getInstance().traceEnter();
-      $('#Dialog-New-Activity').dialog('close');
+     
       var activityName = $('#Activity-Name').val();
       var activityColor = $('#Activity-Color').val();
+      var activityFontColor = $('#Activity-Font-Color').val();
+     
       JSLogger.getInstance().debug("The new activity name is [ " +
          activityName +" ] and its color is [ " +
-         activityColor + " ]");
-      sendActivityDataToServer(activityName, activityColor);
+         activityColor + " ] and the font color is [ " + 
+         activityFontColor + " ] ");
+        sendActivityDataToServer(activityName, activityColor, activityFontColor);
       JSLogger.getInstance().traceExit()
    }
    ////////////////////////////////////////////////////////////////////
