@@ -55,6 +55,9 @@ $tbActivity->open();
    Nombre: <input id="Activity-Name" type="text" title="Nombre actividad">
    Color: <input id="Activity-Color" type="color" title="Color de la actividad">
    Color texto: <input id="Activity-Font-Color" type="color" title="Color del texto">
+   <script type="text/javascript">
+      $('#Activity-Font-Color').val("#ffffff");
+   </script>
 </div>
 <!-- Definition of the remove activity dialog -->
 <div id="Dialog-Remove-Activity" title="Borrar Actividad">
@@ -168,12 +171,15 @@ $tbActivity->open();
     * @param theActivityId
     * @param theActivityName
     * @param theActivityColor
+    * @oaram theActivityFontColor
     */
-   function addActivityToTable(theActivityId, theActivityName, theActivityColor){
+   function addActivityToTable(theActivityId, theActivityName, theActivityColor,
+                              theActivityFontColor){
       JSLogger.getInstance().traceEnter();
       JSLogger.getInstance().debug("Add activity with params: Activity ID [ " + 
             theActivityId + " ], Activity Name [ " + theActivityName + 
-            " ] and Activity Color [ " + theActivityColor + " ]");
+            " ], Activity Color [ " + theActivityColor + " ] and Activity Font Color [ " +
+            theActivityFontColor + " ]");
       var htmlToAppend = "<div id=\"Tabla-Actividad-"+theActivityId+"\" class=\"Table-Row\">";
       htmlToAppend += "<div class=\"Table-Column Table-Column1-Width\">";
       htmlToAppend += theActivityName;
@@ -181,7 +187,11 @@ $tbActivity->open();
       htmlToAppend += "<div class=\"Table-Column Table-Column2-Width\">";
       htmlToAppend += "<div style=\"background-color:"+theActivityColor+";color:"+theActivityColor+";width:100%;height:100%;display:block\"><br></div>";
       htmlToAppend += "</div>";
-      htmlToAppend += "<div id=\"Remove-Activity-Btn-" + theActivityId +"\" class=\"Table-Column Round-Corners-Button Table-Column3-Width Remove-Activity-Btn\">";
+      htmlToAppend += "<div class=\"Table-Column Table-Column3-Width\">";
+      htmlToAppend += "<div style=\"color:"+theActivityFontColor+";width:100%;height:100%;display:block;text-align:center\">Color Texto<br></div>";
+      htmlToAppend += "</div>";
+     
+      htmlToAppend += "<div id=\"Remove-Activity-Btn-" + theActivityId +"\" class=\"Table-Column Round-Corners-Button Table-Column4-Width Remove-Activity-Btn\">";
       htmlToAppend += "Eliminar";
       htmlToAppend += "</div>";
       htmlToAppend += "</div>";
@@ -223,7 +233,8 @@ $tbActivity->open();
       if (parseInt(JSON.parse(response)['ResultCode']) == 200){
          JSLogger.getInstance().debug("The activity [ " + theActivityName +
                " ] has been added successfully");
-         addActivityToTable(parseInt(JSON.parse(response)['lastID']),theActivityName, theActivityColor);
+         addActivityToTable(parseInt(JSON.parse(response)['lastID']),theActivityName,
+                         theActivityColor, theActivityFontColor);
       }else{
          JSLogger.getInstance().debug("An error has been produced when the activity [ " + 
                theActivityName + " ] was being added. Error [ " + 
