@@ -374,7 +374,7 @@ include_once("php/Database/Tables/TB_Timetable.php");
             activitiesJSON[idxDay][idxActivity] = {};
             activitiesJSON[idxDay][idxActivity].activityName = $(activityDetail.find('div').get(0)).text().replace(/\n/g,'').trim();
             activitiesJSON[idxDay][idxActivity].activityColor = activityDetail.css('background-color');
-            activitiesJSON[idxDay][idxActivity].fontColor = activityDetail.css('color');
+            activitiesJSON[idxDay][idxActivity].activityFontColor = activityDetail.css('color');
             activitiesJSON[idxDay][idxActivity].activityTime = $(activityDetail.find('.Activity-Time')).text().replace(/\n/g,'').trim();
             activitiesJSON[idxDay][idxActivity].activityStart = (activityDetail.offset().top - activityDetail.parent().offset().top)/22;
             activitiesJSON[idxDay][idxActivity].activityDuration = parseInt(activityDetail.css('height'))/22;
@@ -519,6 +519,7 @@ include_once("php/Database/Tables/TB_Timetable.php");
                   activityData.activityName + " ] in day [ " + day +" ]");
             var activityName = activityData.activityName;
             var activityColor = activityData.activityColor;
+            var activityFontColor = activityData.activityFontColor;
             var activityTime = activityData.activityTime;
             var activityStart = parseInt(activityData.activityStart);
             var activityDuration = parseInt(activityData.activityDuration);
@@ -529,6 +530,7 @@ include_once("php/Database/Tables/TB_Timetable.php");
             
             var jqueryActivity = $('<div class="Activity-Detail" '+
                        'style="background-color:' + activityColor + ';'+
+                       'color:' + activityFontColor + ';' +
                        'top:' + (activityStart * 22) + 'px;'+
                        'height:'+ (activityDuration * 22) + 'px">'+
                        '<div>'+activityName+'</div>'+
