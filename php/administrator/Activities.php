@@ -37,7 +37,7 @@ $tbActivity->open();
                <?php print($tbActivity->getNombre());?>
             </div>
             <div class="Table-Column Table-Column2-Width">
-               <div style="background-color:<?php print($tbActivity->getColor());?>;color:<?php print($tbActivity->getColor());?>;width:100%;height:100%;display:block"><br></div>
+               <div style="background-color:<?php print($tbActivity->getColor());?>;color:<?php print($tbActivity->getFontColor());?>;width:100%;height:100%;display:block;text-align:center">Color Texto<br></div>
             </div>
             <div class="Table-Column Table-Column3-Width">
                <div style="color:<?php print($tbActivity->getFontColor());?>;width:100%;height:100%;display:block;text-align:center">Color Texto<br></div>
