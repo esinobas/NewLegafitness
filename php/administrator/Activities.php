@@ -54,6 +54,7 @@ $tbActivity->open();
 <div id="Dialog-New-Activity" title="Nueva Actividad">
    Nombre: <input id="Activity-Name" type="text" title="Nombre actividad">
    Color: <input id="Activity-Color" type="color" title="Color de la actividad">
+   Color texto: <input id="Activity-Font-Color" type="color" title="Color del texto">
 </div>
 <!-- Definition of the remove activity dialog -->
 <div id="Dialog-Remove-Activity" title="Borrar Actividad">
