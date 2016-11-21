@@ -230,6 +230,7 @@
                
                   $activityName = $activityDetail['activityName'];
                   $activityColor = $activityDetail['activityColor'];
+                  $activityFontColor = $activityDetail['activityFontColor'];
                   $activityTime = $activityDetail['activityTime'];
                   $activityStart = $activityDetail['activityStart'] * 11;
                   $activityDuration = $activityDetail['activityDuration'] * 11;
@@ -238,6 +239,7 @@
                   ?>
                   <div class="Activity-Detail" 
                      style="background-color: <?php print($activityColor)?>;
+                     color: <?php print($activityFontColor);?>;
                      top: <?php print($activityStart)?>px;height: <?php print($activityDuration);?>px;
                      padding-top: <?php print($paddingTop);?>px;
                      <?php if ($activityDuration/11 < 3 )print ("font-size: 0.4em")?>">
