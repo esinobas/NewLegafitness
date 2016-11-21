@@ -374,6 +374,7 @@ include_once("php/Database/Tables/TB_Timetable.php");
             activitiesJSON[idxDay][idxActivity] = {};
             activitiesJSON[idxDay][idxActivity].activityName = $(activityDetail.find('div').get(0)).text().replace(/\n/g,'').trim();
             activitiesJSON[idxDay][idxActivity].activityColor = activityDetail.css('background-color');
+            activitiesJSON[idxDay][idxActivity].fontColor = activityDetail.css('color');
             activitiesJSON[idxDay][idxActivity].activityTime = $(activityDetail.find('.Activity-Time')).text().replace(/\n/g,'').trim();
             activitiesJSON[idxDay][idxActivity].activityStart = (activityDetail.offset().top - activityDetail.parent().offset().top)/22;
             activitiesJSON[idxDay][idxActivity].activityDuration = parseInt(activityDetail.css('height'))/22;
