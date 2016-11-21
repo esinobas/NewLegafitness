@@ -72,6 +72,10 @@
             <name>Image</name>
             <type>string</type>
          </column>
+         <column>
+            <name>FontColor</name>
+            <type>string</type>
+         </column>
       </columns>
       <key>
          <column>Id</column>
@@ -99,6 +103,11 @@
                   <name>Image</name>
                   <type>string</type>
                   <logical>Image</logical>
+               </column>
+               <column>
+                  <name>FontColor</name>
+                  <type>string</type>
+                  <logical>FontColor</logical>
                </column>
             </columns>
             <key>ID</key>

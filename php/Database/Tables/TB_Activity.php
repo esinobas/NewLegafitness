@@ -34,6 +34,7 @@
      const NombreColumnC = "Nombre";
      const ColorColumnC = "Color";
      const ImageColumnC = "Image";
+     const FontColorColumnC = "FontColor";
       
       /*** Phisical constants ***/
 
@@ -43,6 +44,7 @@
       const phisicalTB_ACTIVIDADNameColumnC = "Name";
       const phisicalTB_ACTIVIDADColorColumnC = "Color";
       const phisicalTB_ACTIVIDADImageColumnC = "Image";
+      const phisicalTB_ACTIVIDADFontColorColumnC = "FontColor";
 
      /*
       * Constructor. The table definition is done here
@@ -61,6 +63,8 @@
                               self::ColorColumnC,ColumnType::stringC));
 		$this->tableDefinitionM->addColumn(new ColumnDef(
                               self::ImageColumnC,ColumnType::stringC));
+		$this->tableDefinitionM->addColumn(new ColumnDef(
+                              self::FontColorColumnC,ColumnType::stringC));
 		$this->tableDefinitionM->addKey(self::IdColumnC);
    
       $this->tableMappingM = new TableMapping();
@@ -86,6 +90,11 @@
             self::phisicalTB_ACTIVIDADImageColumnC ,
             self::ImageColumnC,
             ColumnType::stringC);
+      $this->tableMappingM->addColumn(
+            self::phisicalTB_ACTIVIDADC ,
+            self::phisicalTB_ACTIVIDADFontColorColumnC ,
+            self::FontColorColumnC,
+            ColumnType::stringC);
       
       $this->tableMappingM->addKey(self::phisicalTB_ACTIVIDADC,
             self::phisicalTB_ACTIVIDADIDColumnC );
@@ -97,12 +106,14 @@
       public function insert( $theNombre
                               ,$theColor
                               ,$theImage
+                              ,$theFontColor
                                 ){
          $this->loggerM->trace("Enter");
          $arrayData = array();
          $arrayData[self::NombreColumnC] = $theNombre;
          $arrayData[self::ColorColumnC] = $theColor;
          $arrayData[self::ImageColumnC] = $theImage;
+         $arrayData[self::FontColorColumnC] = $theFontColor;
          $this->loggerM->trace("Exit");
 
          return parent::insertData($arrayData);
@@ -141,6 +152,16 @@
       public function setImage($Image){
          $this->loggerM->trace("Enter");
          $this->set(self::ImageColumnC, $Image);
+         $this->loggerM->trace("Exit");
+      }
+      public function getFontColor(){
+         $this->loggerM->trace("Enter/Exit");
+         return $this->get(self::FontColorColumnC);
+      }
+      
+      public function setFontColor($FontColor){
+         $this->loggerM->trace("Enter");
+         $this->set(self::FontColorColumnC, $FontColor);
          $this->loggerM->trace("Exit");
       }
 

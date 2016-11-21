@@ -167,13 +167,16 @@ article{
 
 .Table-Column1-Width{
  
-   width: 599px;
+   width: 449px;
 }
 .Table-Column2-Width{
  
    width: 100px;
 }
 .Table-Column3-Width{
+   width: 150px;
+}
+.Table-Column4-Width{
  
    width: 199px;
 }

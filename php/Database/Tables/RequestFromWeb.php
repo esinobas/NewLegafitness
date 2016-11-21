@@ -99,6 +99,12 @@
                              $row[TB_Activity::ImageColumnC] ." ]");
                   $theTable->setImage($row[TB_Activity::ImageColumnC ]);
                 }
+               if (isset($row[TB_Activity::FontColorColumnC])){
+                  $logger->trace("Set value to column [ ".
+                             TB_Activity::FontColorColumnC ." ] -> [ ".
+                             $row[TB_Activity::FontColorColumnC] ." ]");
+                  $theTable->setFontColor($row[TB_Activity::FontColorColumnC ]);
+                }
             }
 
             if (strcmp($theTable->getTableName(),TB_Timetable::TB_TimetableTableC) == 0){
@@ -184,10 +190,12 @@
          $varNombre = $theData["Nombre"];
          $varColor = $theData["Color"];
          $varImage = $theData["Image"];
+         $varFontColor = $theData["FontColor"];
 
          $newId = $theTable->insert($varNombre
                                 ,$varColor
                                 ,$varImage
+                                ,$varFontColor
                                 );
       }
 
@@ -326,6 +334,7 @@
              $rowData['Nombre'] = $theTable->getNombre();
              $rowData['Color'] = $theTable->getColor();
              $rowData['Image'] = $theTable->getImage();
+             $rowData['FontColor'] = $theTable->getFontColor();
          }
 
          if (strcmp($theTable->getTableName(),TB_Timetable::TB_TimetableTableC) == 0){

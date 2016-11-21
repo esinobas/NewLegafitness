@@ -22,8 +22,10 @@ $tbActivity->open();
       </div>
       <div id="Tabla-Actividades-Color" class="Table-Column Table-Column2-Width">
          Color
+      </div><div id="Tabla-Actividades-Color" class="Table-Column Table-Column3-Width">
+         Color Texto
       </div>
-      <div id="Tabla-Actividades-Add" class="Table-Column Round-Corners-Button Table-Column3-Width">
+      <div id="Tabla-Actividades-Add" class="Table-Column Round-Corners-Button Table-Column4-Width">
          Nueva Actividad
       </div>
    </div>
@@ -37,7 +39,10 @@ $tbActivity->open();
             <div class="Table-Column Table-Column2-Width">
                <div style="background-color:<?php print($tbActivity->getColor());?>;color:<?php print($tbActivity->getColor());?>;width:100%;height:100%;display:block"><br></div>
             </div>
-            <div id="Remove-Activity-Btn-<?php print($tbActivity->getId());?>" class="Table-Column Round-Corners-Button Table-Column3-Width Remove-Activity-Btn" data-id="<? print($tbActivity->getId());?>" data-activity-name="<?php print($tbActivity->getNombre());?>">
+            <div class="Table-Column Table-Column3-Width">
+               <div style="color:<?php print($tbActivity->getFontColor());?>;width:100%;height:100%;display:block"><br></div>
+            </div>
+            <div id="Remove-Activity-Btn-<?php print($tbActivity->getId());?>" class="Table-Column Round-Corners-Button Table-Column4-Width Remove-Activity-Btn" data-id="<? print($tbActivity->getId());?>" data-activity-name="<?php print($tbActivity->getNombre());?>">
                Eliminar
             </div>
          </div>
