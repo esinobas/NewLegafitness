@@ -49,7 +49,7 @@ include_once("php/Database/Tables/TB_Timetable.php");
          $tbActivity->open();
          while ($tbActivity->next()){
             ?>
-            <option value="<?php print($tbActivity->getColor());?>">
+            <option value="<?php print($tbActivity->getColor().";".$tbActivity->getFontColor());?>">
                <?php print($tbActivity->getNombre());?>
             </option>
       <?php 
@@ -206,8 +206,13 @@ include_once("php/Database/Tables/TB_Timetable.php");
       JSLogger.getInstance().debug("Add activity [ " + theActivityName + 
                   " ] with color [ " + theActivityColor + " ] in Y position [" +
                   theOffsetY + " ]");
+      var fontColor = theActivityColor.substr(theActivityColor.indexOf(";")+1, 
+            theActivityColor.length - theActivityColor.indexOf(";"));
+      theActivityColor = theActivityColor.substr(0 , theActivityColor.indexOf(";"));
+      JSLogger.getInstance().debug("Font Color [ " + fontColor + " ], background color [ " +
+            theActivityColor + " ] ");
       var newActivity = $("<div class=\"Activity-Detail\" style=\"background-color:"+theActivityColor +
-      ";\"><div>"+theActivityName+"</div></div>");
+      ";color:"+fontColor+"\"><div>"+theActivityName+"</div></div>");
       //JSLogger.getInstance().debug("New html object [ " + newActivity + " ]");
       theJQueryObj.append(newActivity);
       JSLogger.getInstance().trace("parseInt(theOffsetY) / 22 = " + Math.round(parseInt(theOffsetY) / 22));
