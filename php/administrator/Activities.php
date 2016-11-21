@@ -40,7 +40,7 @@ $tbActivity->open();
                <div style="background-color:<?php print($tbActivity->getColor());?>;color:<?php print($tbActivity->getColor());?>;width:100%;height:100%;display:block"><br></div>
             </div>
             <div class="Table-Column Table-Column3-Width">
-               <div style="color:<?php print($tbActivity->getFontColor());?>;width:100%;height:100%;display:block"><br></div>
+               <div style="color:<?php print($tbActivity->getFontColor());?>;width:100%;height:100%;display:block;text-align:center">Color Texto<br></div>
             </div>
             <div id="Remove-Activity-Btn-<?php print($tbActivity->getId());?>" class="Table-Column Round-Corners-Button Table-Column4-Width Remove-Activity-Btn" data-id="<? print($tbActivity->getId());?>" data-activity-name="<?php print($tbActivity->getNombre());?>">
                Eliminar
