@@ -343,15 +343,38 @@ $tbNews->open();
          menubar: false,
          //toolbar1: "formatselect | undo redo | bold italic underline | fontselect fontsizeselect | forecolor backcolor",
          toolbar1: "undo redo | bold italic underline | fontsizeselect | forecolor backcolor",
-         toolbar2: "alignleft aligncenter alignright alignjustify | outdent indent | bullist numlist | cut copy paste | image link"//,
-         /*file_browser_callback: function (field_name, url, type, win) {
-            JSLogger.getInstance().traceEnter();
-            tinyMceImageCallback(field_name);
-            JSLogger.getInstance().traceExit();
-         }*/
+         toolbar2: "alignleft aligncenter alignright alignjustify | outdent indent | bullist numlist | cut copy paste | image link",
+         file_browser_callback: RoxyFileBrowser
+         
       });
       JSLogger.getInstance().traceExit();
    }
+
+   /////////////////////////////////////////////////////////////////////////////
+  function RoxyFileBrowser(field_name, url, type, win) {
+  var roxyFileman = 'plugins/Roxy-Fileman/fileman/index.html';
+  if (roxyFileman.indexOf("?") < 0) {     
+    roxyFileman += "?type=" + type;   
+  }
+  else {
+    roxyFileman += "&type=" + type;
+  }
+  roxyFileman += '&input=' + field_name + '&value=' + win.document.getElementById(field_name).value;
+  if(tinyMCE.activeEditor.settings.language){
+    roxyFileman += '&langCode=' + tinyMCE.activeEditor.settings.language;
+  }
+  tinyMCE.activeEditor.windowManager.open({
+     file: roxyFileman,
+     title: 'Ficheros',
+     width: 800, 
+     height: 500,
+     resizable: "yes",
+     plugins: "media",
+     inline: "yes",
+     close_previous: "no"  
+  }, {     window: win,     input: field_name    });
+  return false; 
+}
 
    ////////////////////////////////////////////////////////////////////////
    /**
