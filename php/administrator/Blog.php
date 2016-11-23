@@ -319,6 +319,7 @@ $tbNews->open();
       tinymce.init({
          selector: theTitleObj,
          theme: "modern",
+         skin: "custom",
          inline: true,
          statusbar: false,
          entity_encoding : "raw",
@@ -333,6 +334,7 @@ $tbNews->open();
       tinymce.init({
          selector: theTextObj,
          theme: "modern",
+         skin: "custom",
          inline: true,
          statusbar: false,
          entity_encoding : "raw",
