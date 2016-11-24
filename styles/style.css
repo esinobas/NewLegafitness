@@ -338,7 +338,7 @@ hgroup h1 {
 }*/
 
 /** Screen size 1200px or greater **/
-@media (min-width: 1200px){
+/*@media (min-width: 1200px){*/
    
    footer{
       padding: 0.62em 8.12em;
@@ -630,4 +630,4 @@ hgroup h1 {
       display: block;
       float:left;
    }
-}
+/*}*/
