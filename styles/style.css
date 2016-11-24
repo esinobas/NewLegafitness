@@ -331,11 +331,11 @@ hgroup h1 {
 /******************************************************/
 
 /** Screen size 990 px **/
-@media (min-width: 990px){
+/*@media (min-width: 990px){
    .container{
       width: 200px;
    }
-}
+}*/
 
 /** Screen size 1200px or greater **/
 @media (min-width: 1200px){
@@ -630,4 +630,4 @@ hgroup h1 {
       display: block;
       float:left;
    }
-  
+}
