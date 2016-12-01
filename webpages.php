@@ -10,6 +10,7 @@
       set_include_path( get_include_path() . PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT']);
    }
    require_once 'php/Database/Tables/TB_Timetable.php';
+   require_once 'php/Database/Tables/TB_News.php';
    /**
     * This file contains functions to show page web
     */
@@ -445,7 +446,7 @@
                   </div>
                </div>
                <div class="DataEntryRow">
-                  <div class="DataEntryLabel" id="Re-Email">Re-Correo Electrónico<sup>*</sup></div>
+                  <div class="DataEntryLabel" id="Re-Email">Confirmar Correo Electrónico<sup>*</sup></div>
                   <div class="DataEntryValue" id="Re-emailValue">
                      <input type="text">
                   </div>
@@ -500,7 +501,17 @@
       <script type="text/javascript">
       $('#Menu-News').addClass('Current-Page');
       </script>
+      <?php
+         $tbNews = new TB_News();
+         $tbNews->open();
+      ?>
       <article id="News" class="Main-Article Orange-Article">
+         <?php while ($tbNews->next()){
+            if ($tbNews->getPublished()){
+               print($tbNews->getTitle());
+               print($tbNews->getNew());
+            }
+         }?>
       </article>
       <aside id="News-Aside">
          <div id="News-Post-Index">
