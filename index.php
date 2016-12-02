@@ -8,7 +8,7 @@
       <!-- JQuery -->
       <script type="text/javascript" src="/plugins/JQuery/jquery-3.1.0.min.js"></script>
       <?php 
-      if(isset ($_GET['p']) && $_GET['p'] == "Contacto"){
+      if(isset ($_GET['p']) && ($_GET['p'] == "Contacto") || $_GET['p'] == "Noticias"){
       ?> 
          
          
@@ -21,14 +21,14 @@
          <script type="text/javascript" src="/js/JSLogger/JSLogger.js"></script>
          <script type="text/javascript" src="/plugins/Ajax/Ajax.js"></script>
          <script type="text/javascript" src="/js/GeneralLib.js"></script>
-         
-         <!--  DataEntry -->
-         <script type="text/javascript" src="/plugins/DataEntry/DataEntryFunctions.js"></script>
-         <link rel="stylesheet" href="/plugins/DataEntry/DataEntry.css"/>
+         <?php if ($_GET['p'] == "Contacto"){?>
+            <!--  DataEntry -->
+            <script type="text/javascript" src="/plugins/DataEntry/DataEntryFunctions.js"></script>
+            <link rel="stylesheet" href="/plugins/DataEntry/DataEntry.css"/>
         
-        <!--  ContactForm -->
-        <script type="text/javascript" src="/plugins/ContactForm/ContactForm.js"></script>
-        
+           <!--  ContactForm -->
+           <script type="text/javascript" src="/plugins/ContactForm/ContactForm.js"></script>
+         <?php }?>
          <link rel="stylesheet" href="/styles/ButtonsStyles.css"/>
       <?php 
       }

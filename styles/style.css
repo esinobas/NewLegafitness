@@ -616,7 +616,10 @@ hgroup h1 {
       display: block;
       float: left;
       min-height: 500px;
-      height: 500px;
+      /*height: 500px;*/
+      width: 70%;
+      margin-left: calc((100% - 70%) / 2);
+     
 
      }
    #News-List{
@@ -629,5 +632,60 @@ hgroup h1 {
       box-sizing: border-box;
       display: block;
       float:left;
+      min-height: 500px;
+      /*height: 500px;*/
+      width: 30%;
+      background-color: blue;
+      
    }
+   .New-Preview{
+      box-sizing: border-box;
+      width: 100%;
+      display: block;
+      float:left;
+      text-align: justify;
+      font-family: Roboto-Light;
+      font-size: 1em;
+      padding: 15px 0px;
+      border-bottom: 1px white solid;
+      
+   }
+   .New-Header{
+      box-sizing: border-box;
+      width: 100%;
+      display: block;
+      float:left;
+      
+
+   }
+   .New-Title{
+      box-sizing: border-box;
+      width: 80%;
+      display: block;
+      float:left;
+      font-family: Roboto-Regular;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 1.5em;
+      text-align: left;
+      
+   }
+   .New-Date{
+      box-sizing: border-box;
+      width: 20%;
+      display: block;
+      float:left;
+      font-size: 0.7em;
+      font-weight: bold;
+      text-align: right;
+   }
+   .Read-New-Button{
+      background-color: #FFF;
+      color: #FF5A00;
+      border-color: #FF5A00;
+      font-family: Roboto-Regular;
+      width: 3em;
+      float:right;
+   }
+
 /*}*/
