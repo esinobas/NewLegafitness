@@ -617,8 +617,8 @@ hgroup h1 {
       float: left;
       min-height: 500px;
       /*height: 500px;*/
-      width: 70%;
-      margin-left: calc((100% - 70%) / 2);
+      width: 80%;
+      margin-left: calc((100% - 80%) / 2);
      
 
      }
