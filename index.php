@@ -10,24 +10,24 @@
       <?php 
       if(isset ($_GET['p']) && ($_GET['p'] == "Contacto") || $_GET['p'] == "Noticias"){
       ?> 
-         
-         
-         <!-- JQuery UI, custom to Legafitness -->
-         <script type="text/javascript" src="/plugins/JQuery-UI/jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
-         <link rel="stylesheet" href="/plugins/JQuery-UI/jquery-ui-1.12.0.custom/jquery-ui.min.css">
-         <link rel="stylesheet" href="/plugins/JQuery-UI/jquery-ui-1.12.0.custom/jquery-ui.structure.min.css">
-         <link rel="stylesheet" href="/plugins/JQuery-UI/jquery-ui-1.12.0.custom/jquery-ui.theme.min.css">
-         
-         <script type="text/javascript" src="/js/JSLogger/JSLogger.js"></script>
-         <script type="text/javascript" src="/plugins/Ajax/Ajax.js"></script>
-         <script type="text/javascript" src="/js/GeneralLib.js"></script>
          <?php if ($_GET['p'] == "Contacto"){?>
+         
+            <!-- JQuery UI, custom to Legafitness -->
+            <script type="text/javascript" src="/plugins/JQuery-UI/jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+            <link rel="stylesheet" href="/plugins/JQuery-UI/jquery-ui-1.12.0.custom/jquery-ui.min.css">
+            <link rel="stylesheet" href="/plugins/JQuery-UI/jquery-ui-1.12.0.custom/jquery-ui.structure.min.css">
+            <link rel="stylesheet" href="/plugins/JQuery-UI/jquery-ui-1.12.0.custom/jquery-ui.theme.min.css">
+         
+            <script type="text/javascript" src="/js/JSLogger/JSLogger.js"></script>
+            <script type="text/javascript" src="/plugins/Ajax/Ajax.js"></script>
+            <script type="text/javascript" src="/js/GeneralLib.js"></script>
+         
             <!--  DataEntry -->
             <script type="text/javascript" src="/plugins/DataEntry/DataEntryFunctions.js"></script>
             <link rel="stylesheet" href="/plugins/DataEntry/DataEntry.css"/>
         
-           <!--  ContactForm -->
-           <script type="text/javascript" src="/plugins/ContactForm/ContactForm.js"></script>
+            <!--  ContactForm -->
+            <script type="text/javascript" src="/plugins/ContactForm/ContactForm.js"></script>
          <?php }?>
          <link rel="stylesheet" href="/styles/ButtonsStyles.css"/>
       <?php 
