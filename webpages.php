@@ -15,6 +15,38 @@
    /**
     * This file contains functions to show page web
     */
+   
+   ///////////////////////////////////////////////////////////////////////
+   function friendlyUrl($url) {
+       
+      // Tranformamos todo a minusculas
+       
+      $url = strtolower($url);
+       
+      //Rememplazamos caracteres especiales latinos
+       
+      $find = array('á', 'é', 'í', 'ó', 'ú', 'ñ');
+       
+      $repl = array('a', 'e', 'i', 'o', 'u', 'n');
+       
+      $url = str_replace ($find, $repl, $url);
+       
+      // Añaadimos los guiones
+       
+      $find = array(' ', '&', '\r\n', '\n', '+');
+      $url = str_replace ($find, '-', $url);
+       
+      // Eliminamos y Reemplazamos demás caracteres especiales
+       
+      $find = array('/[^a-z0-9\-<>]/', '/[\-]+/', '/<[^>]*>/');
+       
+      $repl = array('', '-', '');
+       
+      $url = preg_replace ($find, $repl, $url);
+       
+      return $url;
+       
+   }
    /////////////////////////////////////////////////////////////////////////
    function getArticleAllFitnessYouWant(){
       ?>
@@ -533,8 +565,10 @@
       }
       return $html;
    }
+   
+
    //////////////////////////////////////////////////////////////////////////
-   function getNews(){
+   function getNews($thePostId){
    ?>
       <script type="text/javascript">
       $('#Menu-News').addClass('Current-Page');
@@ -544,30 +578,35 @@
          $tbNews->open();
       ?>
       <article id="News" class="Main-Article Orange-Article">
-         <?php while ($tbNews->next()){
-            if ($tbNews->getPublished()){
-            ?>
-            <div id="<?php print($tbNews->getId());?>" class="New-Preview">
-               <div class="New-Header">
-                  <div class="New-Title">
-                     <?php print($tbNews->getTitle());?>
+         <?php print("POST [ $thePostId ]"); ?>
+         
+         <?php
+            if ($thePostId == null){ 
+               while ($tbNews->next()){
+                  if ($tbNews->getPublished()){
+               ?>
+               <div id="<?php print($tbNews->getId());?>" class="New-Preview">
+                  <div class="New-Header">
+                     <div class="New-Title">
+                        <?php print($tbNews->getTitle());?>
+                     </div>
+                     <div class="New-Date">
+                        <?php print(getDateFromTimestamp($tbNews->getDateTime())); ?>
+                     </div>
                   </div>
-                  <div class="New-Date">
-                     <?php print(getDateFromTimestamp($tbNews->getDateTime())); ?>
+                  <div>
+                     <?php print(getPlainTextIntroFromHtml($tbNews->getNew(), PREVIEW_NEWS_NUM_CHARACTERS_C));?>
                   </div>
+                  <a href="Noticias/<?php print(friendlyUrl($tbNews->getTitle()));?>">
+                     <div id="Read-New-<?php print($tbNews->getId());?>" class="Read-New-Button Round-Corners-Button" title="Leer la Noticia">
+                        Leer
+                     </div>
+                  </a> 
                </div>
-               <div>
-                  <?php print(getPlainTextIntroFromHtml($tbNews->getNew(), PREVIEW_NEWS_NUM_CHARACTERS_C));?>
-               </div>
-               <a href="Noticias/<?php $aux = strip_tags($tbNews->getTitle());print(preg_replace("/\s+/ ", "-", $aux));?>">
-                  <div id="Read-New-<?php print($tbNews->getId());?>" class="Read-New-Button Round-Corners-Button" title="Leer la Noticia">
-                     Leer
-                  </div>
-               </a> 
-            </div>
-               <?php 
-            }
-         }?>
+               <?php
+                  } 
+               }
+            }?>
          
       </article>
      <!-- <aside id="News-Aside">
