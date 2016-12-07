@@ -547,7 +547,7 @@
          <?php while ($tbNews->next()){
             if ($tbNews->getPublished()){
             ?>
-            <div id="New-Preview-<?php print($tbNews->getId());?>" class="New-Preview">
+            <div id="<?php print($tbNews->getId());?>" class="New-Preview">
                <div class="New-Header">
                   <div class="New-Title">
                      <?php print($tbNews->getTitle());?>
@@ -559,9 +559,11 @@
                <div>
                   <?php print(getPlainTextIntroFromHtml($tbNews->getNew(), PREVIEW_NEWS_NUM_CHARACTERS_C));?>
                </div>
-               <div id="Read-New-<?php print($tbNews->getId());?>" class="Read-New-Button Round-Corners-Button">
-                  Leer
-               </div>
+               <a href="Noticias/<?php $aux = strip_tags($tbNews->getTitle());print(preg_replace("/\s+/ ", "-", $aux));?>">
+                  <div id="Read-New-<?php print($tbNews->getId());?>" class="Read-New-Button Round-Corners-Button" title="Leer la Noticia">
+                     Leer
+                  </div>
+               </a> 
             </div>
                <?php 
             }

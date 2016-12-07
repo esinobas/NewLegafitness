@@ -21,3 +21,4 @@ RewriteRule ^([a-zA-Z]+)/Clases-Colectivas$ /index.php?p=Horarios&anchor=Anchor-
 RewriteCond %{REQUEST_URI} ^/.*$ [NC]
 RewriteRule ^([a-zA-Z]+)$ /?p=$1 [QSA,L]
 
+#News
