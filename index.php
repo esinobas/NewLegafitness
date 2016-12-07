@@ -102,7 +102,7 @@
                      getActivities();
                   }
                   if ($_GET['p']=='Noticias'){
-                      getNews();
+                      getNews((isset($_GET['post'])?$_GET['post']:null));
                   }
                   if ($_GET['p']=='Horarios'){
                      getTimeTables();
