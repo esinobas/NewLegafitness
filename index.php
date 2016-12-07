@@ -36,7 +36,7 @@
       ?>
       <link rel="stylesheet" href="/styles/style.css"/>
       
-      
+      <base href="/index">
    </head>
    <body>
    <?php 
