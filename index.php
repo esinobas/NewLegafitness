@@ -8,6 +8,7 @@
       <!-- JQuery -->
       <script type="text/javascript" src="/plugins/JQuery/jquery-3.1.0.min.js"></script>
       <?php 
+
       if(isset ($_GET['p']) && ($_GET['p'] == "Contacto") || $_GET['p'] == "Noticias"){
       ?> 
          <?php if ($_GET['p'] == "Contacto"){?>

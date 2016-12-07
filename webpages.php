@@ -578,8 +578,6 @@
          $tbNews->open();
       ?>
       <article id="News" class="Main-Article Orange-Article">
-         <?php print("POST [ $thePostId ]"); ?>
-         
          <?php
             if ($thePostId == null){ 
                while ($tbNews->next()){
@@ -606,6 +604,31 @@
                <?php
                   } 
                }
+            }else{
+               $found = false;
+               while (!$found && $tbNews->next()){
+                  if (strcasecmp($thePostId, friendlyUrl($tbNews->getTitle())) == 0 ){
+                     $found = true;
+                  }
+               }
+               ?>
+               <div class="New-Header">
+                  <div class="New-Title">
+                     <?php print($tbNews->getTitle());?>
+                  </div>
+                  <div class="New-Date">
+                     <?php print(getDateFromTimestamp($tbNews->getDateTime())); ?>
+                  </div>
+               </div>
+               <div>
+                  <?php print($tbNews->getNew());?>
+               </div>
+               <a href="javascript:history.back(-1);">
+                  <div id="Read-New-<?php print($tbNews->getId());?>" class="Read-New-Button Round-Corners-Button" title="Volver a Noticias">
+                     Volver
+                  </div>
+               </a> 
+            <?php 
             }?>
          
       </article>
