@@ -18,7 +18,7 @@ RewriteRule ^([a-zA-Z]+)/Clases-Ciclo$ /index.php?p=Horarios&anchor=Anchor-Timet
 RewriteRule ^([a-zA-Z]+)/Clases-Colectivas$ /index.php?p=Horarios&anchor=Anchor-Timetable-Collective-Classes [NE,L]
 
 RewriteCond %{REQUEST_URI} ^/Noticias/.*$ [NC]
-RewriteRule ^(.*)$ /index.php/?p=Noticias&post=$1 [QSA,L]
+RewriteRule ^Noticias/(.*)$ /index.php?p=Noticias&post=$1 [NE,L]
 
 #Web
 RewriteCond %{REQUEST_URI} ^/.*$ [NC]
