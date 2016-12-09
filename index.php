@@ -37,6 +37,8 @@
       <link rel="stylesheet" href="/styles/style.css"/>
       
       <base href="/index">
+      <link rel="icon" type="image/png" href="/images/logoicon.png" />
+      <link rel="shortcut icon" href="favicon.ico" >
    </head>
    <body>
    <?php 
