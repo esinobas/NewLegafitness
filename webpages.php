@@ -658,7 +658,11 @@
                      height: 500,
                      buttons: [{
                                  text: 'Aceptar', 
-                                 click: function(){$(this).dialog('close');}
+                                 click: function(){
+                                    if ( ContactForm.sendContactFormToServer(dataContactForm) ) {
+                                       DataEntryFunctions.clearValues('#Contact-Form');
+                                    }
+                                    $(this).dialog('close');}
                                },
                                {
                                  text: 'Rechazar',
