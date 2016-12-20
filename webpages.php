@@ -505,7 +505,7 @@
          <div id="Dialog-Legal-Warning" title="AVISO LEGAL Y POLITICA DE PRIVACIDAD WEBS">
          <ol>
             <li>
-               DATOS IDENTIFICATIVOS: En cumplimiento con el deber de información
+               DATOS IDENTIFICATIVOS: <br>En cumplimiento con el deber de información
                recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la
                Sociedad de la Información y del Comercio Electrónico, a continuación se reflejan
                los siguientes datos: la empresa titular de www.legafitness.es es SPORARENA GESTIÓN, S.L.
@@ -515,14 +515,14 @@
                folio XX, Hoja XXXXX. Correo electrónico de contacto: info@legafitness.es.
             </li>
             <li>
-               USUARIOS: El acceso y/o uso de este portal de SPORARENA
+               USUARIOS: <br>El acceso y/o uso de este portal de SPORARENA
                atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las
                Condiciones Generales de Uso aquí reflejadas. Las citadas Condiciones serán de
                aplicación independientemente de las Condiciones Generales de Contratación que
                en su caso resulten de obligado cumplimiento.
             </li>
             <li>
-               USO DEL PORTAL: www.legafitness.es proporciona el acceso a multitud de
+               USO DEL PORTAL: <br>www.legafitness.es proporciona el acceso a multitud de
                informaciones, servicios, programas o datos (en adelante, &quot;los contenidos&quot;) en
                Internet pertenecientes a SPORARENA o a sus licenciantes a los que el
                USUARIO pueda tener acceso. El USUARIO asume la responsabilidad del uso del
@@ -552,7 +552,7 @@
                de los foros, chats, u otras herramientas de participación.
             </li>
             <li>
-               PROTECCIÓN DE DATOS: SPORARENA cumple con las directrices
+               PROTECCIÓN DE DATOS: <br>SPORARENA cumple con las directrices
                de la Ley Orgánica 15/1999 de 13 de diciembre de Protección de Datos de Carácter
                Personal, el Real Decreto 1720/2007 de 21 de diciembre por el que se aprueba el
                Reglamento de desarrollo de la Ley Orgánica y demás normativa vigente en cada
@@ -569,7 +569,69 @@
                solicitará su consentimiento al tratamiento de su correo electrónico con fines
                comerciales en cada momento.
             </li>
-            <li>
+            <li>PROPIEDAD INTELECTUAL E INDUSTRIAL:<br>SPORARENA por sí o
+               como cesionaria, es titular de todos los derechos de propiedad intelectual e
+               industrial de su página web, así como de los elementos contenidos en la misma (a
+               título enunciativo, imágenes, sonido, audio, vídeo, software o textos; marcas o
+               logotipos, combinaciones de colores, estructura y diseño, selección de materiales
+               usados, programas de ordenador necesarios para su funcionamiento, acceso y uso,
+               etc.), titularidad de SPORARENA o bien de sus licenciantes. Todos los
+               derechos reservados. En virtud de lo dispuesto en los artículos 8 y 32.1, párrafo
+               segundo, de la Ley de Propiedad Intelectual, quedan expresamente prohibidas la
+               reproducción, la distribución y la comunicación pública, incluida su modalidad de
+               puesta a disposición, de la totalidad o parte de los contenidos de esta página web,
+               con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la
+               autorización de SPORARENA. El USUARIO se compromete a respetar
+               los derechos de Propiedad Intelectual e Industrial titularidad de SPORARENA.
+                Podrá visualizar los elementos del portal e incluso imprimirlos, copiarlos
+               y almacenarlos en el disco duro de su ordenador o en cualquier otro soporte físico
+               siempre y cuando sea, única y exclusivamente, para su uso personal y privado. El
+               USUARIO deberá abstenerse de suprimir, alterar, eludir o manipular cualquier
+               dispositivo de protección o sistema de seguridad que estuviera instalado en el las
+               páginas de Nombre de la empresa.
+            </li>
+            <li>EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD:<br>SPORARENA 
+               no se hace responsable, en ningún caso, de los daños y perjuicios de
+               cualquier naturaleza que pudieran ocasionar, a título enunciativo: errores u
+               omisiones en los contenidos, falta de disponibilidad del portal o la transmisión de
+               virus o programas maliciosos o lesivos en los contenidos, a pesar de haber
+               adoptado todas las medidas tecnológicas necesarias para evitarlo.
+            </li>
+            <li>MODIFICACIONES:<br>SPORARENA se reserva el derecho de efectuar
+               sin previo aviso las modificaciones que considere oportunas en su portal, pudiendo
+               cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través
+               de la misma como la forma en la que éstos aparezcan presentados o localizados en
+               su portal.
+            </li>
+            <li>ENLACES:<br>En el caso de que en www.legafitnes.es se dispusiesen enlaces o
+               hipervínculos hacía otros sitios de Internet, SPORARENA no ejercerá
+               ningún tipo de control sobre dichos sitios y contenidos. En ningún caso SPORARENA
+                asumirá responsabilidad alguna por los contenidos de algún enlace
+               perteneciente a un sitio web ajeno, ni garantizará la disponibilidad técnica, calidad,
+               fiabilidad, exactitud, amplitud, veracidad, validez y constitucionalidad de cualquier
+               material o información contenida en ninguno de dichos hipervínculos u otros sitios
+               de Internet. Igualmente la inclusión de estas conexiones externas no implicará
+               ningún tipo de asociación, fusión o participación con las entidades conectadas.
+            </li>
+            <li>DERECHO DE EXCLUSIÓN:<br>SPORARENA se reserva el derecho a
+               denegar o retirar el acceso a portal y/o los servicios ofrecidos sin necesidad de
+               preaviso, a instancia propia o de un tercero, a aquellos usuarios que incumplan las
+               presentes Condiciones Generales de Uso.
+            </li>
+            <li>GENERALIDADES:<br>SPORARENA <strong>perseguirá el incumplimiento
+               </strong>de las presentes condiciones así como cualquier utilización indebida de su portal
+               ejerciendo todas las acciones civiles y penales que le puedan corresponder en
+               derecho.
+            </li>
+            <li>MODIFICACIÓN DE LAS PRESENTES CONDICIONES Y DURACIÓN:<br>SPORARENA 
+               podrá modificar en cualquier momento las condiciones
+               aquí determinadas, siendo debidamente publicadas como aquí aparecen. La
+               vigencia de las citadas condiciones irá en función de su exposición y estarán
+               vigentes hasta que sean modificadas por otras debidamente publicadas.
+            </li>
+            <li>LEGISLACIÓN APLICABLE Y JURISDICCIÓN:<br>La relación entre SPORARENA
+                y el USUARIO se regirá por la normativa española vigente y cualquier
+               controversia se someterá a los Juzgados y Tribunales de la ciudad de Lugar.
             </li>
          </ol>
       </div>
@@ -592,7 +654,7 @@
                   $('#Dialog-Legal-Warning').dialog({
                      modal: true,
                      resizable: false,
-                     width: 475,
+                     width: 500,
                      height: 500,
                      buttons: [{
                                  text: 'Aceptar', 
