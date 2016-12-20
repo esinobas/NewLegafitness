@@ -68,7 +68,7 @@ footer{
 }
 #Image-Rooms{
    box-sizing: border-box;
-   background-image: url("../images/lowcost33.jpg");
+   background-image: url("../images/salas.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
@@ -93,7 +93,7 @@ footer{
 }
 #Image-Activities{
    box-sizing: border-box;
-   background-image: url("../images/cuerpo38.jpg");
+   background-image: url("../images/actividades.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
@@ -108,7 +108,7 @@ footer{
 }
 #Image-Fachada{
    box-sizing: border-box;
-   background-image: url("../images/Fachada.jpg");
+   background-image: url("../images/index.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
