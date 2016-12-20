@@ -502,7 +502,79 @@
                <div class="Round-Corners-Button DataEntryWindowButtonOk" id="Button-Contact" title="Enviar">Enviar</div>
             </div>
          </div>
+         <div id="Dialog-Legal-Warning" title="AVISO LEGAL Y POLITICA DE PRIVACIDAD WEBS">
+         <ol>
+            <li>
+               DATOS IDENTIFICATIVOS: En cumplimiento con el deber de información
+               recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la
+               Sociedad de la Información y del Comercio Electrónico, a continuación se reflejan
+               los siguientes datos: la empresa titular de www.legafitness.es es SPORARENA GESTIÓN, S.L.
+               (en adelante SPORARENA), con domicilio a estos efectos en Calle El Charco 13, 28911, Léganes, Madrid.
+               número de C.I.F.: B83148040 inscrita en el Registro Mercantil de Madrid en el
+               tomo YYYY general, ZZZZ de la Sección A, inscripción B del Libro de Sociedades,
+               folio XX, Hoja XXXXX. Correo electrónico de contacto: info@legafitness.es.
+            </li>
+            <li>
+               USUARIOS: El acceso y/o uso de este portal de SPORARENA
+               atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las
+               Condiciones Generales de Uso aquí reflejadas. Las citadas Condiciones serán de
+               aplicación independientemente de las Condiciones Generales de Contratación que
+               en su caso resulten de obligado cumplimiento.
+            </li>
+            <li>
+               USO DEL PORTAL: www.legafitness.es proporciona el acceso a multitud de
+               informaciones, servicios, programas o datos (en adelante, &quot;los contenidos&quot;) en
+               Internet pertenecientes a SPORARENA o a sus licenciantes a los que el
+               USUARIO pueda tener acceso. El USUARIO asume la responsabilidad del uso del
+               portal. Dicha responsabilidad se extiende al registro que fuese necesario para
+               acceder a determinados servicios o contenidos. En dicho registro el USUARIO será
+               responsable de aportar información veraz y lícita. Como consecuencia de este
+               registro, al USUARIO se le puede proporcionar una contraseña de la que será
+               responsable, comprometiéndose a hacer un uso diligente y confidencial de la
+               misma. El USUARIO se compromete a hacer un uso adecuado de los contenidos y
+               servicios (como por ejemplo servicios de chat, foros de discusión o grupos de
+               noticias) que SPORARENA ofrece a través de su portal y con carácter
+               enunciativo pero no limitativo, a no emplearlos para (1º) incurrir en actividades
+               ilícitas, ilegales o contrarias a la buena fe y al orden público; (2º) difundir
+               contenidos o propaganda de carácter racista, xenófobo, pornográfico-ilegal, de
+               apología del terrorismo o atentatorio contra los derechos humanos; (3º) provocar
+               daños en los sistemas físicos y lógicos de SPORAREAN, de sus
+               proveedores o de terceras personas, introducir o difundir en la red virus
+               informáticos o cualesquiera otros sistemas físicos o lógicos que sean susceptibles
+               de provocar los daños anteriormente mencionados; (4º) intentar acceder y, en su
+               caso, utilizar las cuentas de correo electrónico de otros usuarios y modificar o
+               manipular sus mensajes. SPORARENA se reserva el derecho de retirar
+               todos aquellos comentarios y aportaciones que vulneren el respeto a la dignidad de
+               la persona, que sean discriminatorios, xenófobos, racistas, pornográficos, que
+               atenten contra la juventud o la infancia, el orden o la seguridad pública o que, a su
+               juicio, no resultaran adecuados para su publicación. En cualquier caso, SPORARENA
+                no será responsable de las opiniones vertidas por los usuarios a través
+               de los foros, chats, u otras herramientas de participación.
+            </li>
+            <li>
+               PROTECCIÓN DE DATOS: SPORARENA cumple con las directrices
+               de la Ley Orgánica 15/1999 de 13 de diciembre de Protección de Datos de Carácter
+               Personal, el Real Decreto 1720/2007 de 21 de diciembre por el que se aprueba el
+               Reglamento de desarrollo de la Ley Orgánica y demás normativa vigente en cada
+               momento, y vela por garantizar un correcto uso y tratamiento de los datos
+               personales del usuario. Para ello, junto a cada formulario de recabo de datos de
+               carácter personal, en los servicios que el usuario pueda solicitar a SPORARENA,
+                hará saber al usuario de la existencia y aceptación de las condiciones
+               particulares del tratamiento de sus datos en cada caso, informándole de la
+               responsabilidad del fichero creado, la dirección del responsable, la posibilidad de
+               ejercer sus derechos de acceso, rectificación, cancelación u oposición, la finalidad
+               del tratamiento y las comunicaciones de datos a terceros en su caso. Asimismo,
+               SPORARENA informa que da cumplimiento a la Ley 34/2002 de 11 de
+               julio, de Servicios de la Sociedad de la Información y el Comercio Electrónico y le
+               solicitará su consentimiento al tratamiento de su correo electrónico con fines
+               comerciales en cada momento.
+            </li>
+            <li>
+            </li>
+         </ol>
+      </div>
       </article>
+      
       <!-- Bind the button for send the contact form to the function -->
       <script type="text/javascript">
 
@@ -517,15 +589,29 @@
             
             if (!ContactForm.checkEmptyValues(dataContactForm)){
                if (ContactForm.checkEmail(dataContactForm)){
-                  if ( ContactForm.sendContactFormToServer(dataContactForm) ) {
+                  $('#Dialog-Legal-Warning').dialog({
+                     modal: true,
+                     resizable: false,
+                     width: 475,
+                     height: 500,
+                     buttons: [{
+                                 text: 'Aceptar', 
+                                 click: function(){$(this).dialog('close');}
+                               },
+                               {
+                                 text: 'Rechazar',
+                                 click: function(){$(this).dialog('close');}
+                              }]
+                     });
+                 /*if ( ContactForm.sendContactFormToServer(dataContactForm) ) {
                      DataEntryFunctions.clearValues('#Contact-Form');
-                  }
+                  }*/
                }
             }
          });
       </script>
    <?php 
-      //Dialog error definition in Contac form
+      //Dialog error definition in Contact form
       dialog();
    }
    

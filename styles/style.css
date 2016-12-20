@@ -329,6 +329,10 @@ hgroup h1 {
    border-bottom-style: solid;
    border-bottom-width: 2px;
 }
+#Dialog-Legal-Warning{
+   display: none;
+   overflow-y: scroll; 
+}
 /******************************************************/
 
 /** Screen size 990 px **/
